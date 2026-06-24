@@ -1,26 +1,69 @@
 title: àVélo Inspector
 description_html: |
-  Explore the àVélo Québec bikeshare history collected by
-  <a href="https://github.com/VincentBerg/aVeloInspector">aVeloInspector</a>.
-  The <strong>observation</strong> table is a change-log (a row per station
-  whenever its availability changes), sampled ~every 75s.
-license: ""
+  <p>Explore the history of the <strong>àVélo Québec</strong> bikeshare network,
+  collected by <a href="https://github.com/VincentBerg/aVeloInspector">aVeloInspector</a>.</p>
+  <p><strong>Start here:</strong> the saved queries below answer the common
+  questions. To find a station's id, use <a href="/stations/find_station">🔎 Find a station</a>
+  or browse the <a href="/stations/station">station</a> table (a map of all stations
+  appears at the top).</p>
 source: àVélo GBFS feed (PBSC)
 source_url: https://aveloquebec.ca/stations/
+
+# Map any table that has lat/lon columns (our `station` table).
+plugins:
+  datasette-cluster-map:
+    latitude_column: lat
+    longitude_column: lon
 
 databases:
   stations:
     tables:
+      station:
+        label_column: name          # show the name wherever a station is linked
+        sort: name
+        description_html: A map of every station appears above the table. Click a row to see its full history.
+        columns:
+          station_id: Short numeric id used to join to observations.
+          name: Station name as shown in the àVélo app.
+          lat: Latitude (decimal degrees).
+          lon: Longitude (decimal degrees).
+          capacity: Total number of docks at the station.
+          address: Civic address.
       observation:
         sort_desc: ts
-    queries:
-      hottest_stations:
-        title: Hottest stations (bike turnover)
         description_html: |
-          Ranked by <em>churn</em> — the total absolute change in available
-          bikes between consecutive observations. A proxy for how busy a
-          station is. Note: ~5-min sampling makes this a lower bound (rapid
-          in-and-out within a window nets to zero).
+          A <em>change-log</em>: one row per station each time its availability
+          changes (~75s sampling). The <strong>station_id</strong> column links to
+          the station. Times are Unix epoch seconds — the saved queries show them
+          as readable Eastern time.
+        facets: [status]
+        columns:
+          station_id: Links to the station (shows its name).
+          ts: When recorded — Unix epoch seconds (UTC).
+          bikes: Bikes available to rent.
+          docks: Empty docks available to return a bike.
+          status: IN_SERVICE, MAINTENANCE, or PLANNED.
+          ebikes: Of `bikes`, how many are e-bikes.
+          mechanical: Of `bikes`, how many are mechanical (àVélo is ~all-electric).
+    queries:
+      find_station:
+        title: 🔎 Find a station (by name)
+        description_html: Type part of a station name to get its id, location and capacity.
+        sql: |-
+          SELECT station_id AS "Id",
+                 name       AS "Station",
+                 address    AS "Address",
+                 capacity   AS "Docks"
+          FROM station
+          WHERE name LIKE '%' || :search || '%'
+          ORDER BY name;
+
+      hottest_stations:
+        title: 🔥 Hottest stations (bike turnover)
+        description_html: |
+          Ranked by <em>churn</em> — total absolute change in available bikes
+          between consecutive observations; a proxy for how busy a station is.
+          Note: ~75s sampling makes this a lower bound.
         sql: |-
           WITH deltas AS (
             SELECT station_id,
@@ -29,22 +72,22 @@ databases:
                    ) AS d
             FROM observation
           )
-          SELECT s.name,
-                 SUM(ABS(d))                AS churn,
-                 COUNT(*)                   AS changes,
-                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS churn_per_dock
+          SELECT s.name                  AS "Station",
+                 SUM(ABS(d))             AS "Bike turnover",
+                 COUNT(*)                AS "Changes recorded",
+                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
           FROM deltas
           JOIN station s USING (station_id)
           WHERE d IS NOT NULL
           GROUP BY deltas.station_id
-          ORDER BY churn DESC
+          ORDER BY "Bike turnover" DESC
           LIMIT 25;
 
       activity_by_hour:
-        title: Activity by hour of day (Eastern)
+        title: ⏰ Activity by hour of day (Eastern)
         description_html: |
-          Total bike turnover bucketed by local hour (UTC−4, summer). Shows
-          commute peaks once enough history accumulates.
+          Total bike turnover by local hour (UTC−4, summer). Switch to the chart
+          tab for a curve of commute peaks once enough history accumulates.
         sql: |-
           WITH deltas AS (
             SELECT ts,
@@ -53,48 +96,53 @@ databases:
                    ) AS d
             FROM observation
           )
-          SELECT CAST(strftime('%H', ts, 'unixepoch', '-4 hours') AS INTEGER) AS hour,
-                 SUM(ABS(d)) AS churn
+          SELECT CAST(strftime('%H', ts, 'unixepoch', '-4 hours') AS INTEGER) AS "Hour",
+                 SUM(ABS(d)) AS "Bike turnover"
           FROM deltas
           WHERE d IS NOT NULL
-          GROUP BY hour
-          ORDER BY hour;
+          GROUP BY "Hour"
+          ORDER BY "Hour";
 
       most_often_empty:
-        title: Stations most often empty
-        description_html: |
-          Share of observations where the station had zero bikes available.
+        title: 🚲 Stations most often empty
+        description_html: Share of observations where the station had zero bikes available.
         sql: |-
-          SELECT s.name,
-                 SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END)        AS empty_obs,
-                 COUNT(*)                                            AS total_obs,
-                 ROUND(100.0 * SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_empty
+          SELECT s.name AS "Station",
+                 SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END) AS "Times empty",
+                 COUNT(*)                                     AS "Times recorded",
+                 ROUND(100.0 * SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS "% empty"
           FROM observation o
           JOIN station s USING (station_id)
           GROUP BY o.station_id
-          HAVING total_obs > 1
-          ORDER BY pct_empty DESC, empty_obs DESC
+          HAVING "Times recorded" > 1
+          ORDER BY "% empty" DESC, "Times empty" DESC
           LIMIT 25;
 
       station_history:
-        title: One station's history
+        title: 📈 One station's history
         description_html: |
-          Availability over time for a single station. Pick an id from the
-          <a href="/stations/station">station</a> table.
+          Availability over time for one station. Enter its id (find it with
+          <a href="/stations/find_station">🔎 Find a station</a>).
         sql: |-
-          SELECT datetime(ts, 'unixepoch', '-4 hours') AS at_eastern,
-                 bikes, docks, status, ebikes, mechanical
+          SELECT datetime(ts, 'unixepoch', '-4 hours') AS "When (Eastern)",
+                 bikes      AS "Bikes",
+                 docks      AS "Docks",
+                 status     AS "Status",
+                 ebikes     AS "E-bikes",
+                 mechanical AS "Mechanical"
           FROM observation
           WHERE station_id = :station_id
           ORDER BY ts;
 
       latest_snapshot:
-        title: Latest availability (all stations)
-        description_html: |
-          Each station's most recently recorded availability.
+        title: 🗺️ Latest availability (all stations)
+        description_html: Each station's most recently recorded availability.
         sql: |-
-          SELECT s.name, o.bikes, o.docks, o.status,
-                 datetime(o.ts, 'unixepoch', '-4 hours') AS as_of_eastern
+          SELECT s.name   AS "Station",
+                 o.bikes   AS "Bikes",
+                 o.docks   AS "Docks",
+                 o.status  AS "Status",
+                 datetime(o.ts, 'unixepoch', '-4 hours') AS "As of (Eastern)"
           FROM observation o
           JOIN station s USING (station_id)
           WHERE o.ts = (

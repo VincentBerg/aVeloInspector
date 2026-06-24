@@ -97,21 +97,27 @@ For interactive exploration (the "hottest stations" leaderboard, activity by
 hour, per-station history), use [Datasette](https://datasette.io):
 
 ```bash
-pip install datasette datasette-vega   # one-time
-python explore.py                       # rebuilds stations.db + serves at :8001
+pip install datasette datasette-vega datasette-cluster-map   # one-time
+python explore.py                                             # rebuilds stations.db + serves at :8001
 ```
 
 Open <http://127.0.0.1:8001/stations>. Predefined queries (in `metadata.yaml`)
-appear on the database page:
+appear on the database page with friendly column names:
 
 | Query | Shows |
 |-------|-------|
-| **Hottest stations** | bike turnover (churn) leaderboard |
-| **Activity by hour** | turnover bucketed by local hour — commute peaks |
-| **Most often empty** | % of observations with zero bikes |
-| **One station's history** | availability over time for a given `station_id` |
-| **Latest snapshot** | each station's most recent availability |
+| 🔎 **Find a station** | look up a station's id by name (typeable search) |
+| 🔥 **Hottest stations** | bike turnover (churn) leaderboard |
+| ⏰ **Activity by hour** | turnover bucketed by local hour — commute peaks |
+| 🚲 **Most often empty** | % of observations with zero bikes |
+| 📈 **One station's history** | availability over time for a given `station_id` |
+| 🗺️ **Latest snapshot** | each station's most recent availability |
 
-With the `datasette-vega` plugin, any query result has a **chart** tab — e.g.
-open *Hottest stations* and switch to a bar chart, or *Activity by hour* as a
-line chart. The richer the history, the more meaningful these become.
+**Finding a station id:** use *Find a station* (search by name), or browse the
+`station` table — a **map** of all stations renders above it (via
+`datasette-cluster-map`), and each `station_id` in the `observation` table is a
+clickable link to its station (via a foreign key + name labels).
+
+**Charts:** with `datasette-vega`, any result has a **chart** tab — e.g.
+*Hottest stations* as a bar chart, or *Activity by hour* as a line chart. The
+richer the history, the more meaningful these become.

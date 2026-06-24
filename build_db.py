@@ -44,7 +44,7 @@ def build(db_path: str = DB_PATH) -> sqlite3.Connection:
             address    TEXT
         );
         CREATE TABLE observation (
-            station_id TEXT,
+            station_id TEXT REFERENCES station(station_id),
             ts         INTEGER,
             bikes      INTEGER,
             docks      INTEGER,
