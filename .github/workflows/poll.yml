@@ -33,7 +33,7 @@ jobs:
           for i in 1 2 3 4; do
             echo "--- poll $i/4 ---"
             python poll.py
-            [ "$i" -lt 4 ] && sleep 75
+            if [ "$i" -lt 4 ]; then sleep 75; fi
           done
 
       - name: Commit changes
