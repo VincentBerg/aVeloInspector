@@ -1,0 +1,103 @@
+title: àVélo Inspector
+description_html: |
+  Explore the àVélo Québec bikeshare history collected by
+  <a href="https://github.com/VincentBerg/aVeloInspector">aVeloInspector</a>.
+  The <strong>observation</strong> table is a change-log (a row per station
+  whenever its availability changes), sampled ~every 5 min.
+license: ""
+source: àVélo GBFS feed (PBSC)
+source_url: https://aveloquebec.ca/stations/
+
+databases:
+  stations:
+    tables:
+      observation:
+        sort_desc: ts
+    queries:
+      hottest_stations:
+        title: Hottest stations (bike turnover)
+        description_html: |
+          Ranked by <em>churn</em> — the total absolute change in available
+          bikes between consecutive observations. A proxy for how busy a
+          station is. Note: ~5-min sampling makes this a lower bound (rapid
+          in-and-out within a window nets to zero).
+        sql: |-
+          WITH deltas AS (
+            SELECT station_id,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM observation
+          )
+          SELECT s.name,
+                 SUM(ABS(d))                AS churn,
+                 COUNT(*)                   AS changes,
+                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS churn_per_dock
+          FROM deltas
+          JOIN station s USING (station_id)
+          WHERE d IS NOT NULL
+          GROUP BY deltas.station_id
+          ORDER BY churn DESC
+          LIMIT 25;
+
+      activity_by_hour:
+        title: Activity by hour of day (Eastern)
+        description_html: |
+          Total bike turnover bucketed by local hour (UTC−4, summer). Shows
+          commute peaks once enough history accumulates.
+        sql: |-
+          WITH deltas AS (
+            SELECT ts,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM observation
+          )
+          SELECT CAST(strftime('%H', ts, 'unixepoch', '-4 hours') AS INTEGER) AS hour,
+                 SUM(ABS(d)) AS churn
+          FROM deltas
+          WHERE d IS NOT NULL
+          GROUP BY hour
+          ORDER BY hour;
+
+      most_often_empty:
+        title: Stations most often empty
+        description_html: |
+          Share of observations where the station had zero bikes available.
+        sql: |-
+          SELECT s.name,
+                 SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END)        AS empty_obs,
+                 COUNT(*)                                            AS total_obs,
+                 ROUND(100.0 * SUM(CASE WHEN o.bikes = 0 THEN 1 ELSE 0 END) / COUNT(*), 1) AS pct_empty
+          FROM observation o
+          JOIN station s USING (station_id)
+          GROUP BY o.station_id
+          HAVING total_obs > 1
+          ORDER BY pct_empty DESC, empty_obs DESC
+          LIMIT 25;
+
+      station_history:
+        title: One station's history
+        description_html: |
+          Availability over time for a single station. Pick an id from the
+          <a href="/stations/station">station</a> table.
+        sql: |-
+          SELECT datetime(ts, 'unixepoch', '-4 hours') AS at_eastern,
+                 bikes, docks, status, ebikes, mechanical
+          FROM observation
+          WHERE station_id = :station_id
+          ORDER BY ts;
+
+      latest_snapshot:
+        title: Latest availability (all stations)
+        description_html: |
+          Each station's most recently recorded availability.
+        sql: |-
+          SELECT s.name, o.bikes, o.docks, o.status,
+                 datetime(o.ts, 'unixepoch', '-4 hours') AS as_of_eastern
+          FROM observation o
+          JOIN station s USING (station_id)
+          WHERE o.ts = (
+            SELECT MAX(ts) FROM observation o2 WHERE o2.station_id = o.station_id
+          )
+          ORDER BY s.name;

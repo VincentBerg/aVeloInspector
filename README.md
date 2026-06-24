@@ -89,3 +89,28 @@ WHERE o.ts = (SELECT MAX(ts) FROM observation o2 WHERE o2.station_id = o.station
 Because the JSONL is a *change* log, a station's availability between two
 recorded rows is whatever the earlier row says (it's unchanged until the next
 row). Carry the last value forward when reconstructing a continuous series.
+
+## Exploring with Datasette
+
+For interactive exploration (the "hottest stations" leaderboard, activity by
+hour, per-station history), use [Datasette](https://datasette.io):
+
+```bash
+pip install datasette datasette-vega   # one-time
+python explore.py                       # rebuilds stations.db + serves at :8001
+```
+
+Open <http://127.0.0.1:8001/stations>. Predefined queries (in `metadata.yaml`)
+appear on the database page:
+
+| Query | Shows |
+|-------|-------|
+| **Hottest stations** | bike turnover (churn) leaderboard |
+| **Activity by hour** | turnover bucketed by local hour — commute peaks |
+| **Most often empty** | % of observations with zero bikes |
+| **One station's history** | availability over time for a given `station_id` |
+| **Latest snapshot** | each station's most recent availability |
+
+With the `datasette-vega` plugin, any query result has a **chart** tab — e.g.
+open *Hottest stations* and switch to a bar chart, or *Activity by hour* as a
+line chart. The richer the history, the more meaningful these become.
