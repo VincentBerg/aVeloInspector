@@ -1,0 +1,8 @@
+# Derived / local artifacts — rebuildable from committed data/
+stations.db
+stations.geojson
+
+# Python
+.venv/
+__pycache__/
+*.pyc

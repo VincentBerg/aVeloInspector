@@ -1,0 +1,1802 @@
+{
+ "10": {
+  "address": "730 Rue Jacques-Parizeau",
+  "capacity": 32,
+  "lat": 46.80781090418463,
+  "lon": -71.21585520433806,
+  "name": "Parc de la Francophonie",
+  "station_id": "10"
+ },
+ "100": {
+  "address": "Musée des Plaines d'Abraham",
+  "capacity": 17,
+  "lat": 46.807458250139774,
+  "lon": -71.21246202104737,
+  "name": "Musée des plaines d'Abraham",
+  "station_id": "100"
+ },
+ "101": {
+  "address": "Parc Roland-Beaudin",
+  "capacity": 20,
+  "lat": 46.77241980350945,
+  "lon": -71.30060636888116,
+  "name": "Parc Roland-Beaudin",
+  "station_id": "101"
+ },
+ "102": {
+  "address": "1re Rue / 6e Avenue",
+  "capacity": 20,
+  "lat": 46.82214759734603,
+  "lon": -71.22080572536477,
+  "name": "1re Rue / 6e Avenue",
+  "station_id": "102"
+ },
+ "103": {
+  "address": "Benoît-XV / 16e Rue",
+  "capacity": 20,
+  "lat": 46.82999344468069,
+  "lon": -71.23406555757677,
+  "name": "Benoît-XV / 16e Rue",
+  "station_id": "103"
+ },
+ "104": {
+  "address": "26e Rue / 25e Rue",
+  "capacity": 16,
+  "lat": 46.83690506957536,
+  "lon": -71.23717313373956,
+  "name": "26e Rue / 25e Rue",
+  "station_id": "104"
+ },
+ "105": {
+  "address": "Église de Saint-Pascal-de-Maizerets",
+  "capacity": 20,
+  "lat": 46.83992332197408,
+  "lon": -71.22207256483458,
+  "name": "Église de Saint-Pascal-de-Maizerets",
+  "station_id": "105"
+ },
+ "106": {
+  "address": "Parc Dollards-Des Ormeaux",
+  "capacity": 16,
+  "lat": 46.80555621525353,
+  "lon": -71.2476885329298,
+  "name": "Parc Dollard-Des Ormeaux",
+  "station_id": "106"
+ },
+ "107": {
+  "address": "Parc-O-Bus 41e Rue / 1re Avenue",
+  "capacity": 26,
+  "lat": 46.84156661401417,
+  "lon": -71.24678158244029,
+  "name": "Parc-O-Bus 41e Rue E. / 1re Avenue",
+  "station_id": "107"
+ },
+ "108": {
+  "address": "Espace Quatre Cents",
+  "capacity": 16,
+  "lat": 46.81716053424597,
+  "lon": -71.20520173003877,
+  "name": "Espace Quatre Cents",
+  "station_id": "108"
+ },
+ "109": {
+  "address": "Parc du Général-Vanier",
+  "capacity": 16,
+  "lat": 46.80782585940283,
+  "lon": -71.2534048873447,
+  "name": "Parc du Général-Vanier",
+  "station_id": "109"
+ },
+ "11": {
+  "address": "1051 Avenue Cartier",
+  "capacity": 28,
+  "lat": 46.803790282177374,
+  "lon": -71.22581692861937,
+  "name": "Fraser / Cartier",
+  "station_id": "11"
+ },
+ "110": {
+  "address": "Du Pont / De La Salle",
+  "capacity": 24,
+  "lat": 46.81656343824044,
+  "lon": -71.22167023348234,
+  "name": "Du Pont / De La Salle",
+  "station_id": "110"
+ },
+ "111": {
+  "address": "Sainte-Foy / Nérée-Tremblay",
+  "capacity": 16,
+  "lat": 46.7861473992621,
+  "lon": -71.2809524171295,
+  "name": "Sainte-Foy / Nérée-Tremblay",
+  "station_id": "111"
+ },
+ "112": {
+  "address": "Parc Richelieu",
+  "capacity": 20,
+  "lat": 46.810794090010134,
+  "lon": -71.22086728091747,
+  "name": "Parc Richelieu",
+  "station_id": "112"
+ },
+ "113": {
+  "address": "Hochelaga / De Soulanges",
+  "capacity": 16,
+  "lat": 46.76970390410054,
+  "lon": -71.28928335832975,
+  "name": "Hochelaga / De Soulanges",
+  "station_id": "113"
+ },
+ "114": {
+  "address": "Place Ste-Foy",
+  "capacity": 22,
+  "lat": 46.772207184678265,
+  "lon": -71.28115419819228,
+  "name": "Place Ste-Foy - Bernardin-Morin",
+  "station_id": "114"
+ },
+ "115": {
+  "address": "Laurier Québec",
+  "capacity": 22,
+  "lat": 46.77166712760249,
+  "lon": -71.2831375638134,
+  "name": "Laurier Québec",
+  "station_id": "115"
+ },
+ "116": {
+  "address": "Station de la Voile",
+  "capacity": 24,
+  "lat": 46.78251805148338,
+  "lon": -71.23910799051288,
+  "name": "Station de la Voile",
+  "station_id": "116"
+ },
+ "117": {
+  "address": "Station de la Plage",
+  "capacity": 28,
+  "lat": 46.77591727092199,
+  "lon": -71.24286742054232,
+  "name": "Station de la Plage",
+  "station_id": "117"
+ },
+ "118": {
+  "address": "Hôpital Chauveau",
+  "capacity": 12,
+  "lat": 46.85264917020762,
+  "lon": -71.36859157646136,
+  "name": "Hôpital Chauveau",
+  "station_id": "118"
+ },
+ "119": {
+  "address": "Racine / Wilfrid-Caron",
+  "capacity": 12,
+  "lat": 46.85082165727602,
+  "lon": -71.36069354338989,
+  "name": "Racine / Wilfrid-Caron",
+  "station_id": "119"
+ },
+ "120": {
+  "address": "Des Dames-Ursulines / Racine",
+  "capacity": 12,
+  "lat": 46.85425482308304,
+  "lon": -71.35533007311247,
+  "name": "Des Dames-Ursulines / Racine",
+  "station_id": "120"
+ },
+ "121": {
+  "address": "Des Saules / 1re avenue",
+  "capacity": 16,
+  "lat": 46.839248704195,
+  "lon": -71.24584830886256,
+  "name": "Des Saules E. / 1re Avenue",
+  "station_id": "121"
+ },
+ "123": {
+  "address": "Station test 2",
+  "capacity": 16,
+  "lat": 46.846213166648546,
+  "lon": -71.25512111309013,
+  "name": "2e Avenue O. / 50e Rue O.",
+  "station_id": "123"
+ },
+ "124": {
+  "address": "Transfert2",
+  "capacity": 20,
+  "lat": 46.845038143242014,
+  "lon": -71.26179981353721,
+  "name": "Parc Henri-Casault",
+  "station_id": "124"
+ },
+ "125": {
+  "address": "Transfert3",
+  "capacity": 16,
+  "lat": 46.766558927107255,
+  "lon": -71.28728643815093,
+  "name": "Sasseville / De l'Église",
+  "station_id": "125"
+ },
+ "126": {
+  "address": "Transfert4",
+  "capacity": 20,
+  "lat": 46.7600786305359,
+  "lon": -71.28852339760803,
+  "name": "De La Forest / Lavigerie",
+  "station_id": "126"
+ },
+ "128": {
+  "address": "Transfert6",
+  "capacity": 16,
+  "lat": 46.8382435557152,
+  "lon": -71.25171811710162,
+  "name": "Des Lilas O. / Du Colisée",
+  "station_id": "128"
+ },
+ "129": {
+  "address": "Sasseville / De l'Église",
+  "capacity": 16,
+  "lat": 46.845218998505835,
+  "lon": -71.24478465122458,
+  "name": "42e Rue E. / 4e Avenue E.",
+  "station_id": "129"
+ },
+ "13": {
+  "address": "Cégep Garneau",
+  "capacity": 18,
+  "lat": 46.79273110396984,
+  "lon": -71.26363071131132,
+  "name": "Cégep Garneau",
+  "station_id": "13"
+ },
+ "130": {
+  "address": "Des Aulnes / Des Frênes",
+  "capacity": 16,
+  "lat": 46.81262180931363,
+  "lon": -71.20731424422382,
+  "name": "Cathédrale Holy Trinity",
+  "station_id": "130"
+ },
+ "131": {
+  "address": "Parc Gérard-Marchand ",
+  "capacity": 20,
+  "lat": 46.83755261329308,
+  "lon": -71.2411400986,
+  "name": "Parc Gérard-Marchand ",
+  "station_id": "131"
+ },
+ "132": {
+  "address": "Des Chênes / Du Curé-Couture",
+  "capacity": 20,
+  "lat": 46.8331341934601,
+  "lon": -71.25239196541747,
+  "name": "Des Chênes O. / Du Curé-Couture",
+  "station_id": "132"
+ },
+ "133": {
+  "address": "Fleur-de-Lys / Wilfrid-hamel",
+  "capacity": 54,
+  "lat": 46.82027622149531,
+  "lon": -71.24956383148204,
+  "name": "Fleur-de-Lys / Wilfrid-Hamel",
+  "station_id": "133"
+ },
+ "134": {
+  "address": "Ducharme / Chabot",
+  "capacity": 16,
+  "lat": 46.812179369496235,
+  "lon": -71.26492995145759,
+  "name": "Chabot / Ducharme",
+  "station_id": "134"
+ },
+ "135": {
+  "address": "Parc Maurice-Lortie",
+  "capacity": 16,
+  "lat": 46.846910738643864,
+  "lon": -71.24910760047874,
+  "name": "Parc Maurice-Lortie",
+  "station_id": "135"
+ },
+ "136": {
+  "address": "D'Assise / Ozanam",
+  "capacity": 20,
+  "lat": 46.82808524573164,
+  "lon": -71.23916122359982,
+  "name": "D'Assise / Ozanam",
+  "station_id": "136"
+ },
+ "137": {
+  "address": "12e Rue / 4e Avenue",
+  "capacity": 20,
+  "lat": 46.82870078013563,
+  "lon": -71.22893372249152,
+  "name": "Église Saint-Fidèle",
+  "station_id": "137"
+ },
+ "138": {
+  "address": "6e Rue / 1re Avenue",
+  "capacity": 20,
+  "lat": 46.82273936220322,
+  "lon": -71.23016165586755,
+  "name": "6e Rue / 1re Avenue",
+  "station_id": "138"
+ },
+ "139": {
+  "address": "4e Rue / 4e Avenue",
+  "capacity": 20,
+  "lat": 46.82349539238212,
+  "lon": -71.22419289621553,
+  "name": "Bibliothèque Saint-Charles",
+  "station_id": "139"
+ },
+ "14": {
+  "address": "Eymard / Sainte-Foy",
+  "capacity": 16,
+  "lat": 46.793318961169156,
+  "lon": -71.25832027273796,
+  "name": "Eymard / Sainte-Foy",
+  "station_id": "14"
+ },
+ "140": {
+  "address": "De Belmont / Sainte-Foy",
+  "capacity": 20,
+  "lat": 46.78852625368843,
+  "lon": -71.27235196379394,
+  "name": "De Belmont / Sainte-Foy",
+  "station_id": "140"
+ },
+ "141": {
+  "address": "Chèvremont / Monseigneur-Laflèche",
+  "capacity": 16,
+  "lat": 46.78400768545028,
+  "lon": -71.29113718755795,
+  "name": "Chevremont / Monseigneur-Laflèche",
+  "station_id": "141"
+ },
+ "142": {
+  "address": "Du Sieur-D'Argenteuil / Saint-Louis",
+  "capacity": 16,
+  "lat": 46.761559974827165,
+  "lon": -71.28364205078734,
+  "name": "Du Sieur-D'Argenteuil / Saint-Louis",
+  "station_id": "142"
+ },
+ "143": {
+  "address": "Chanoine-Martin / Sainte-Foy",
+  "capacity": 16,
+  "lat": 46.779083886545955,
+  "lon": -71.30320529115448,
+  "name": "Du Chanoine-Martin / Sainte-Foy",
+  "station_id": "143"
+ },
+ "144": {
+  "address": "Sainte-Foy / Arthur-Rousseau",
+  "capacity": 20,
+  "lat": 46.78062709365555,
+  "lon": -71.29999487661286,
+  "name": "Sainte-Foy / Arthur-Rousseau",
+  "station_id": "144"
+ },
+ "145": {
+  "address": "Des Châtelets / Lavigerie",
+  "capacity": 20,
+  "lat": 46.76588682116709,
+  "lon": -71.29577158843003,
+  "name": "Des Châtelets / Lavigerie",
+  "station_id": "145"
+ },
+ "146": {
+  "address": "Moncton / Fraser",
+  "capacity": 20,
+  "lat": 46.80010688490026,
+  "lon": -71.23255984945145,
+  "name": "Moncton / Fraser",
+  "station_id": "146"
+ },
+ "147": {
+  "address": "Quatre-Bourgeois / Wilfrid-Pelletier",
+  "capacity": 20,
+  "lat": 46.76898126882456,
+  "lon": -71.3060710144325,
+  "name": "Parc du Verdier",
+  "station_id": "147"
+ },
+ "148": {
+  "address": "Nolin / Pruneau",
+  "capacity": 16,
+  "lat": 46.81437974875573,
+  "lon": -71.26996526578262,
+  "name": "Nolin / Pruneau",
+  "station_id": "148"
+ },
+ "149": {
+  "address": "De Bourgogne / Du Viaduc",
+  "capacity": 20,
+  "lat": 46.76711315592514,
+  "lon": -71.31225161311141,
+  "name": "De Bourgogne / Du Viaduc",
+  "station_id": "149"
+ },
+ "15": {
+  "address": "De Callières / Marguerite-Bourgeoys",
+  "capacity": 16,
+  "lat": 46.79135483991666,
+  "lon": -71.25262917355235,
+  "name": "De Callières / Marguerite-Bourgeoys",
+  "station_id": "15"
+ },
+ "150": {
+  "address": "France-Prime / Duchesneau",
+  "capacity": 16,
+  "lat": 46.76402211703366,
+  "lon": -71.30515904192997,
+  "name": "France-Prime / Duchesneau",
+  "station_id": "150"
+ },
+ "151": {
+  "address": "Henri-Bourassa / Des Cheminots",
+  "capacity": 16,
+  "lat": 46.85060963180673,
+  "lon": -71.25009479839262,
+  "name": "Henri-Bourassa / Des Cheminots",
+  "station_id": "151"
+ },
+ "152": {
+  "address": "64e Rue / 4e Avenue",
+  "capacity": 16,
+  "lat": 46.855366006787385,
+  "lon": -71.25410363541862,
+  "name": "Parc Saint-Jérôme",
+  "station_id": "152"
+ },
+ "153": {
+  "address": "70e Rue / Henri-Bourassa",
+  "capacity": 16,
+  "lat": 46.8574825919111,
+  "lon": -71.26094921763587,
+  "name": "70e Rue E. / Henri-Bourassa",
+  "station_id": "153"
+ },
+ "154": {
+  "address": "Cégep Limoilou - Campus Charlesbourg",
+  "capacity": 24,
+  "lat": 46.86202186229317,
+  "lon": -71.26170968585346,
+  "name": "Cégep Limoilou - Charlesbourg",
+  "station_id": "154"
+ },
+ "155": {
+  "address": "Courtemanche / Montmorency",
+  "capacity": 20,
+  "lat": 46.8415841695163,
+  "lon": -71.21411443783569,
+  "name": "De Courtemanche / Montmorency",
+  "station_id": "155"
+ },
+ "156": {
+  "address": "CLSC Maizerets",
+  "capacity": 20,
+  "lat": 46.84347309481588,
+  "lon": -71.219111984319,
+  "name": "CLSC Orléans - Maizerets",
+  "station_id": "156"
+ },
+ "157": {
+  "address": "Parc des Gazouillis",
+  "capacity": 24,
+  "lat": 46.8451316637542,
+  "lon": -71.21345542430674,
+  "name": "Sainte-Anne / D'Estimauville",
+  "station_id": "157"
+ },
+ "158": {
+  "address": "IUSMQ",
+  "capacity": 24,
+  "lat": 46.846402004432434,
+  "lon": -71.2169189947286,
+  "name": "IUSMQ",
+  "station_id": "158"
+ },
+ "159": {
+  "address": "Parc Lortie",
+  "capacity": 20,
+  "lat": 46.849500328585,
+  "lon": -71.21047389308835,
+  "name": "Parc Lortie",
+  "station_id": "159"
+ },
+ "16": {
+  "address": "YWCA Québec",
+  "capacity": 16,
+  "lat": 46.79387898216888,
+  "lon": -71.25432294892155,
+  "name": "Marie-Rollet / Marguerite-Bourgeoys",
+  "station_id": "16"
+ },
+ "160": {
+  "address": "Champlain / Escalier du Cap-Blanc",
+  "capacity": 20,
+  "lat": 46.80127798069473,
+  "lon": -71.21166664483985,
+  "name": "Parc de Notre-Dame-de-la-Garde",
+  "station_id": "160"
+ },
+ "161": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.80157536752623,
+  "lon": -71.26140713501556,
+  "name": "Borne / Saint-Sacrement",
+  "station_id": "161"
+ },
+ "162": {
+  "address": "Wilfrid-Laurier / Galipeault",
+  "capacity": 16,
+  "lat": 46.802699971603225,
+  "lon": -71.22095197043895,
+  "name": "Wilfrid-Laurier / Galipeault",
+  "station_id": "162"
+ },
+ "163": {
+  "address": "Kirouac / Durocher",
+  "capacity": 16,
+  "lat": 46.8085097626665,
+  "lon": -71.23451352154596,
+  "name": "Kirouac / Durocher",
+  "station_id": "163"
+ },
+ "164": {
+  "address": "Père-Marquette / Calixa-Lavallée",
+  "capacity": 24,
+  "lat": 46.79757728496691,
+  "lon": -71.2415491354748,
+  "name": "Père-Marquette / Calixa-Lavallée",
+  "station_id": "164"
+ },
+ "165": {
+  "address": "Saint-Sauveur / Bonaventure",
+  "capacity": 16,
+  "lat": 46.80989848531457,
+  "lon": -71.24325770261726,
+  "name": "Saint-Sauveur / Saint-Bonaventure",
+  "station_id": "165"
+ },
+ "166": {
+  "address": "Du Parvis / De Sainte-Hélène",
+  "capacity": 15,
+  "lat": 46.813765376006444,
+  "lon": -71.22296582832388,
+  "name": "Du Parvis / De Sainte-Hélène",
+  "station_id": "166"
+ },
+ "167": {
+  "address": "Gérard-Morisset / René-Lévesque",
+  "capacity": 20,
+  "lat": 46.78852123489627,
+  "lon": -71.25653867825925,
+  "name": "Gérard-Morisset / René-Lévesque O.",
+  "station_id": "167"
+ },
+ "168": {
+  "address": "École de danse de Québec",
+  "capacity": 20,
+  "lat": 46.79772781962854,
+  "lon": -71.26241030357633,
+  "name": "Cyrille-Duquet / Charest O.",
+  "station_id": "168"
+ },
+ "169": {
+  "address": "Parc Alys-Robi",
+  "capacity": 16,
+  "lat": 46.81032491977499,
+  "lon": -71.23527292425628,
+  "name": "Parc Alys-Robi",
+  "station_id": "169"
+ },
+ "17": {
+  "address": "Ernest-Gagnon / De Callières",
+  "capacity": 20,
+  "lat": 46.795003543169834,
+  "lon": -71.24916168204078,
+  "name": "Raymond-Casgrain / Ernest-Gagnon",
+  "station_id": "17"
+ },
+ "170": {
+  "address": "SAAQ",
+  "capacity": 20,
+  "lat": 46.81814751514878,
+  "lon": -71.2153150972209,
+  "name": "SAAQ - Édifice Jean-Lesage",
+  "station_id": "170"
+ },
+ "171": {
+  "address": "Félix-Gabriel-Marchand / Siant-Olivier",
+  "capacity": 16,
+  "lat": 46.807903695419064,
+  "lon": -71.22731709797834,
+  "name": "Félix-Gabriel-Marchand / Saint-Olivier",
+  "station_id": "171"
+ },
+ "172": {
+  "address": "Racine / De l'Ormière",
+  "capacity": 12,
+  "lat": 46.84475647631118,
+  "lon": -71.36730109599648,
+  "name": "Racine / De l'Ormière",
+  "station_id": "172"
+ },
+ "173": {
+  "address": "Bibliothèque Neufchâtel",
+  "capacity": 12,
+  "lat": 46.83526288313119,
+  "lon": -71.35723627939535,
+  "name": "Bibliothèque Neufchâtel",
+  "station_id": "173"
+ },
+ "174": {
+  "address": "Chauveau / De l'Ormière",
+  "capacity": 12,
+  "lat": 46.832685480953096,
+  "lon": -71.34905000475464,
+  "name": "Chauveau / De l'Ormière",
+  "station_id": "174"
+ },
+ "175": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.84872273244515,
+  "lon": -71.22740718844375,
+  "name": "Parc Évangéline",
+  "station_id": "175"
+ },
+ "176": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.852400648827846,
+  "lon": -71.20962011936149,
+  "name": "Parc Saint-Ignace",
+  "station_id": "176"
+ },
+ "177": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.84777487449442,
+  "lon": -71.23219423860073,
+  "name": "Bardy / Désilets",
+  "station_id": "177"
+ },
+ "178": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.753908045493056,
+  "lon": -71.32324788096389,
+  "name": "Centre communautaire de la Pointe-de-Ste-Foy",
+  "station_id": "178"
+ },
+ "179": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.75668063137592,
+  "lon": -71.31010924245422,
+  "name": "De Liège / Neilson",
+  "station_id": "179"
+ },
+ "18": {
+  "address": "Patro Laval",
+  "capacity": 20,
+  "lat": 46.81231722364255,
+  "lon": -71.24216566311739,
+  "name": "Patro Laval",
+  "station_id": "18"
+ },
+ "180": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.75141059309815,
+  "lon": -71.34895685437164,
+  "name": "Parc de Chauray",
+  "station_id": "180"
+ },
+ "181": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.75806561514506,
+  "lon": -71.34979102137527,
+  "name": "Provancher / De la Chaudière",
+  "station_id": "181"
+ },
+ "182": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.888423902711175,
+  "lon": -71.1624372373101,
+  "name": "Mercier / Larue",
+  "station_id": "182"
+ },
+ "183": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.884787003083666,
+  "lon": -71.15895983847007,
+  "name": "Église Saint-Louis-de-Courville",
+  "station_id": "183"
+ },
+ "184": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.874196991967665,
+  "lon": -71.15718695643386,
+  "name": "Sainte-Anne / 112e Rue",
+  "station_id": "184"
+ },
+ "185": {
+  "address": "",
+  "capacity": 24,
+  "lat": 46.88496902103928,
+  "lon": -71.14433112862548,
+  "name": "Parc de la Chute-Montmorency",
+  "station_id": "185"
+ },
+ "186": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.892089661678774,
+  "lon": -71.15012479134478,
+  "name": "Terminus Chute-Montmorency",
+  "station_id": "186"
+ },
+ "187": {
+  "address": "",
+  "capacity": 12,
+  "lat": 46.74751044825724,
+  "lon": -71.34178068642223,
+  "name": "Parc nautique de Cap-Rouge",
+  "station_id": "187"
+ },
+ "188": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.78952696444473,
+  "lon": -71.2825537959872,
+  "name": "Parc Nérée-Tremblay",
+  "station_id": "188"
+ },
+ "189": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.81399310540252,
+  "lon": -71.21340089210403,
+  "name": "Richelieu / D'Auteuil",
+  "station_id": "189"
+ },
+ "19": {
+  "address": "Parc du Bois-de-Coulonge",
+  "capacity": 17,
+  "lat": 46.78924450706438,
+  "lon": -71.2442994386663,
+  "name": "Parc du Bois-de-Coulonge",
+  "station_id": "19"
+ },
+ "190": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.81711162285961,
+  "lon": -71.20236072066268,
+  "name": "Dalhousie / Quai Saint-André",
+  "station_id": "190"
+ },
+ "191": {
+  "address": "216 Rue Georges-Cloutier",
+  "capacity": 12,
+  "lat": 46.857427,
+  "lon": -71.356383,
+  "name": "Georges-Cloutier / Des Cheminots",
+  "station_id": "191"
+ },
+ "192": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.83339934559405,
+  "lon": -71.22423413517913,
+  "name": "De la Capricieuse / De la Canardière",
+  "station_id": "192"
+ },
+ "193": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.83769169580933,
+  "lon": -71.23035859838943,
+  "name": "Du Mont-Thabor / 22e Rue",
+  "station_id": "193"
+ },
+ "194": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.80371620622681,
+  "lon": -71.22905138256988,
+  "name": "De Bourlamaque / Crémazie O.",
+  "station_id": "194"
+ },
+ "195": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.804255979168616,
+  "lon": -71.23222309472997,
+  "name": "De l'Alverne / Sainte-Foy",
+  "station_id": "195"
+ },
+ "196": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.76263351849893,
+  "lon": -71.3194498729988,
+  "name": "De La Pérade / Bégon",
+  "station_id": "196"
+ },
+ "197": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.752972165786225,
+  "lon": -71.32885058884925,
+  "name": "Terminus de Marly",
+  "station_id": "197"
+ },
+ "198": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.76109102163539,
+  "lon": -71.33399817469558,
+  "name": "Laudance / Du Campanile",
+  "station_id": "198"
+ },
+ "199": {
+  "address": "Conrad-Laforte / Sainte-Foy",
+  "capacity": 20,
+  "lat": 46.76493294195758,
+  "lon": -71.33302453282317,
+  "name": "Conrad-Laforte / Sainte-Foy",
+  "station_id": "199"
+ },
+ "2": {
+  "address": "780 3e Avenue",
+  "capacity": 24,
+  "lat": 46.825133777009,
+  "lon": -71.22854741739651,
+  "name": "3e Avenue / 8e Rue",
+  "station_id": "2"
+ },
+ "20": {
+  "address": "Bibliothèque Collège-des-Jésuites",
+  "capacity": 16,
+  "lat": 46.795135745934004,
+  "lon": -71.2434363596382,
+  "name": "Bibliothèque Collège-des-Jésuites",
+  "station_id": "20"
+ },
+ "200": {
+  "address": "De Tilly / Maricourt",
+  "capacity": 16,
+  "lat": 46.76118936673766,
+  "lon": -71.3170874392016,
+  "name": "De Tilly / Maricourt",
+  "station_id": "200"
+ },
+ "201": {
+  "address": "Parc Raymond-De Rosa",
+  "capacity": 16,
+  "lat": 46.75803538996963,
+  "lon": -71.30705972997033,
+  "name": "Parc Raymond-De Rosa",
+  "station_id": "201"
+ },
+ "202": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.77503923742856,
+  "lon": -71.27742727715346,
+  "name": "Place Ste-Foy - Robert-Bourassa",
+  "station_id": "202"
+ },
+ "203": {
+  "address": "73 Rue O. / 3e Avenue O.",
+  "capacity": 16,
+  "lat": 46.85631400546047,
+  "lon": -71.2666800928398,
+  "name": "73 Rue O. / 3e Avenue O.",
+  "station_id": "203"
+ },
+ "204": {
+  "address": "Parc Maria-Goretti",
+  "capacity": 16,
+  "lat": 46.856273653577965,
+  "lon": -71.27167973044357,
+  "name": "Parc Maria-Goretti",
+  "station_id": "204"
+ },
+ "205": {
+  "address": "De Nîmes / De la Sorbonne",
+  "capacity": 20,
+  "lat": 46.864437675551414,
+  "lon": -71.25449425245651,
+  "name": "De Nîmes / De la Sorbonne",
+  "station_id": "205"
+ },
+ "206": {
+  "address": "Saint-Jean / Des Zouaves",
+  "capacity": 20,
+  "lat": 46.8101613511717,
+  "lon": -71.21969287176842,
+  "name": "Saint-Jean / Des Zouaves",
+  "station_id": "206"
+ },
+ "207": {
+  "address": "Parc Victoria - Saint-Anselme",
+  "capacity": 24,
+  "lat": 46.815345180084435,
+  "lon": -71.23185756629042,
+  "name": "Parc Victoria - Saint-Anselme",
+  "station_id": "207"
+ },
+ "208": {
+  "address": "Pont Dorchester",
+  "capacity": 20,
+  "lat": 46.81894575680881,
+  "lon": -71.22346526143316,
+  "name": "Pont Dorchester",
+  "station_id": "208"
+ },
+ "209": {
+  "address": "57e Rue O. / De l'Atrium",
+  "capacity": 16,
+  "lat": 46.84634580523921,
+  "lon": -71.2670550077941,
+  "name": "57e Rue O. / De l'Atrium",
+  "station_id": "209"
+ },
+ "21": {
+  "address": "Père-Marquette / Belvédère",
+  "capacity": 28,
+  "lat": 46.7986913050282,
+  "lon": -71.23946720926467,
+  "name": "Père-Marquette / Des Braves",
+  "station_id": "21"
+ },
+ "210": {
+  "address": "Cardinal-Villeneuve / 22e Rue",
+  "capacity": 16,
+  "lat": 46.83318821469907,
+  "lon": -71.23877625706535,
+  "name": "Cardinal-Villeneuve / 22e Rue",
+  "station_id": "210"
+ },
+ "211": {
+  "address": "47e Rue E. / 46e Rue E.",
+  "capacity": 16,
+  "lat": 46.84881005098598,
+  "lon": -71.24406965015531,
+  "name": "47e Rue E. / 46e Rue E.",
+  "station_id": "211"
+ },
+ "212": {
+  "address": "De la Pente-Douce / Calixa-Lavallée",
+  "capacity": 16,
+  "lat": 46.801241439035415,
+  "lon": -71.24535526416412,
+  "name": "De la Pente-Douce / Calixa-Lavallée",
+  "station_id": "212"
+ },
+ "213": {
+  "address": "Kirouac / Marie-Louise",
+  "capacity": 20,
+  "lat": 46.80405961258324,
+  "lon": -71.24245532186848,
+  "name": "Kirouac / Marie-Louise",
+  "station_id": "213"
+ },
+ "214": {
+  "address": "Bouffard / Napoléon",
+  "capacity": 20,
+  "lat": 46.806722716203716,
+  "lon": -71.24260430641488,
+  "name": "Bouffard / Napoléon",
+  "station_id": "214"
+ },
+ "215": {
+  "address": "Église de Saint-Sauveur",
+  "capacity": 24,
+  "lat": 46.81120250657907,
+  "lon": -71.23595648548323,
+  "name": "Église de Saint-Sauveur",
+  "station_id": "215"
+ },
+ "216": {
+  "address": "Lapointe / Du Général-Allard",
+  "capacity": 24,
+  "lat": 46.770324148771486,
+  "lon": -71.27962502551708,
+  "name": "Lapointe / Du Général-Allard",
+  "station_id": "216"
+ },
+ "217": {
+  "address": "Charles / De Bergerville",
+  "capacity": 20,
+  "lat": 46.78274159013718,
+  "lon": -71.247622223806,
+  "name": "Charles / De Bergerville",
+  "station_id": "217"
+ },
+ "218": {
+  "address": "Station de la Côte",
+  "capacity": 16,
+  "lat": 46.77152291511983,
+  "lon": -71.24815407517394,
+  "name": "Station de la Côte",
+  "station_id": "218"
+ },
+ "219": {
+  "address": "Wilfrid-Hamel / Pierre-Bertrand",
+  "capacity": 20,
+  "lat": 46.80939711938061,
+  "lon": -71.26000683007707,
+  "name": "Wilfrid-Hamel / Pierre-Bertrand",
+  "station_id": "219"
+ },
+ "22": {
+  "address": "Murray / Sainte-Foy",
+  "capacity": 16,
+  "lat": 46.801316256971084,
+  "lon": -71.23913342582605,
+  "name": "Parc des Braves",
+  "station_id": "22"
+ },
+ "220": {
+  "address": "Pierre-Bertrand / Victor-Delamarre",
+  "capacity": 16,
+  "lat": 46.81760201284735,
+  "lon": -71.26643371603969,
+  "name": "Pierre-Bertrand / Victor-Delamarre",
+  "station_id": "220"
+ },
+ "221": {
+  "address": "Bourdages - Rivière Saint-Charles",
+  "capacity": 15,
+  "lat": 46.81602956469083,
+  "lon": -71.24758840107587,
+  "name": "Bourdages - Rivière Saint-Charles",
+  "station_id": "221"
+ },
+ "222": {
+  "address": "5e Rue / 3e Avenue",
+  "capacity": 20,
+  "lat": 46.823385467279316,
+  "lon": -71.2266414848932,
+  "name": "5e Rue / 3e Avenue",
+  "station_id": "222"
+ },
+ "223": {
+  "address": "De la Canardière / 4e Avenue",
+  "capacity": 16,
+  "lat": 46.826224387394305,
+  "lon": -71.22667830577053,
+  "name": "De la Canardière / 4e Avenue",
+  "station_id": "223"
+ },
+ "224": {
+  "address": "Parc Lairet",
+  "capacity": 16,
+  "lat": 46.82769554773672,
+  "lon": -71.24110909938875,
+  "name": "Parc Lairet",
+  "station_id": "224"
+ },
+ "225": {
+  "address": "16e Rue / 4e Avenue",
+  "capacity": 19,
+  "lat": 46.83135754360543,
+  "lon": -71.23115771853548,
+  "name": "16e Rue / 4e Avenue",
+  "station_id": "225"
+ },
+ "226": {
+  "address": "Des Gerbes / Lebourgneuf",
+  "capacity": 20,
+  "lat": 46.84251383276323,
+  "lon": -71.28036768032844,
+  "name": "Des Gerbes / Lebourgneuf",
+  "station_id": "226"
+ },
+ "227": {
+  "address": "Lebourgneuf / De la Griotte",
+  "capacity": 16,
+  "lat": 46.84080110871866,
+  "lon": -71.28258163263763,
+  "name": "Lebourgneuf / De la Griotte",
+  "station_id": "227"
+ },
+ "228": {
+  "address": "Le Mesnil / Lebourgneuf",
+  "capacity": 16,
+  "lat": 46.836748271291825,
+  "lon": -71.29237803399575,
+  "name": "Le Mesnil / Lebourgneuf",
+  "station_id": "228"
+ },
+ "229": {
+  "address": "Lebourgneuf / De l'Islet",
+  "capacity": 20,
+  "lat": 46.836178202132785,
+  "lon": -71.29470898525767,
+  "name": "Lebourgneuf / De l'Islet",
+  "station_id": "229"
+ },
+ "23": {
+  "address": "Père-Marquette / Des Érables",
+  "capacity": 24,
+  "lat": 46.80298336771991,
+  "lon": -71.23230385112188,
+  "name": "Père-Marquette / De Manrèse",
+  "station_id": "23"
+ },
+ "230": {
+  "address": "Lebourgneuf / Des Galeries - Est",
+  "capacity": 16,
+  "lat": 46.83516362907513,
+  "lon": -71.29860508563957,
+  "name": "Lebourgneuf / Des Galeries - Est",
+  "station_id": "230"
+ },
+ "231": {
+  "address": "Lebourgneuf / Des Galeries - Ouest",
+  "capacity": 16,
+  "lat": 46.83425210279602,
+  "lon": -71.30068269450175,
+  "name": "Lebourgneuf / Des Galeries - Ouest",
+  "station_id": "231"
+ },
+ "232": {
+  "address": "Des Martyrs / Monseigneur-Gauthier",
+  "capacity": 16,
+  "lat": 46.85208880977108,
+  "lon": -71.20505019155003,
+  "name": "Des Martyrs / Monseigneur-Gauthier",
+  "station_id": "232"
+ },
+ "233": {
+  "address": "Louis-Fréchette / De Callières",
+  "capacity": 16,
+  "lat": 46.7946977294111,
+  "lon": -71.24714963104748,
+  "name": "Louis-Fréchette / De Callières",
+  "station_id": "233"
+ },
+ "234": {
+  "address": "Thomas-Baillairgé / 76e Rue E.",
+  "capacity": 16,
+  "lat": 46.85879886062211,
+  "lon": -71.26672184955702,
+  "name": "Thomas-Baillairgé / 76e Rue E.",
+  "station_id": "234"
+ },
+ "235": {
+  "address": "Brown / Grande Allée O.",
+  "capacity": 16,
+  "lat": 46.79784874186288,
+  "lon": -71.23182075918623,
+  "name": "Brown / Grande Allée O.",
+  "station_id": "235"
+ },
+ "24": {
+  "address": "Parc Lockwell",
+  "capacity": 24,
+  "lat": 46.80618864587998,
+  "lon": -71.22686526215266,
+  "name": "Parc Lockwell",
+  "station_id": "24"
+ },
+ "25": {
+  "address": "Musée national des beaux-arts",
+  "capacity": 18,
+  "lat": 46.8014574117429,
+  "lon": -71.22620529593462,
+  "name": "Musée national des beaux-arts",
+  "station_id": "25"
+ },
+ "26": {
+  "address": "Grand Théâtre",
+  "capacity": 34,
+  "lat": 46.806292,
+  "lon": -71.221078,
+  "name": "Grand Théâtre de Québec",
+  "station_id": "26"
+ },
+ "27": {
+  "address": "Parc de l'Esplanade",
+  "capacity": 32,
+  "lat": 46.81083682977029,
+  "lon": -71.21174416734335,
+  "name": "Parc de l'Esplanade",
+  "station_id": "27"
+ },
+ "28": {
+  "address": "Parc Montmorency",
+  "capacity": 24,
+  "lat": 46.813879991851834,
+  "lon": -71.20484575502414,
+  "name": "Parc Montmorency",
+  "station_id": "28"
+ },
+ "29": {
+  "address": "Place des Canotiers",
+  "capacity": 32,
+  "lat": 46.814784549011776,
+  "lon": -71.20125289282007,
+  "name": "Place des Canotiers",
+  "station_id": "29"
+ },
+ "3": {
+  "address": "130 Rue de la Gare du Palais",
+  "capacity": 20,
+  "lat": 46.81748363513417,
+  "lon": -71.21286931253941,
+  "name": "Gare du Palais",
+  "station_id": "3"
+ },
+ "30": {
+  "address": "Bassin Louise",
+  "capacity": 24,
+  "lat": 46.817650062860366,
+  "lon": -71.20873930382155,
+  "name": "Bassin Louise",
+  "station_id": "30"
+ },
+ "31": {
+  "address": "Parc Saint-Matthew",
+  "capacity": 20,
+  "lat": 46.81109708055996,
+  "lon": -71.21760167732813,
+  "name": "Parc Saint-Matthew",
+  "station_id": "31"
+ },
+ "32": {
+  "address": "Parc John-Munn",
+  "capacity": 28,
+  "lat": 46.81788381582096,
+  "lon": -71.21899632428105,
+  "name": "Parc John-Munn",
+  "station_id": "32"
+ },
+ "33": {
+  "address": "La Fabrique",
+  "capacity": 24,
+  "lat": 46.81151350118088,
+  "lon": -71.22720860680359,
+  "name": "Saint-Vallier E. / Caron",
+  "station_id": "33"
+ },
+ "34": {
+  "address": "Saint-Joseph / Langelier",
+  "capacity": 20,
+  "lat": 46.812892538605325,
+  "lon": -71.22872112456692,
+  "name": "Saint-Joseph E. / Caron",
+  "station_id": "34"
+ },
+ "35": {
+  "address": "Place Roger-Lemelin",
+  "capacity": 20,
+  "lat": 46.8070057051584,
+  "lon": -71.2360961572326,
+  "name": "Place Roger-Lemelin",
+  "station_id": "35"
+ },
+ "36": {
+  "address": "Parc Victoria",
+  "capacity": 24,
+  "lat": 46.815057,
+  "lon": -71.235443,
+  "name": "Parc Victoria - S.-Napoléon-Parent",
+  "station_id": "36"
+ },
+ "37": {
+  "address": "Parc de la Pointe-aux-Lièvres",
+  "capacity": 20,
+  "lat": 46.82117479531745,
+  "lon": -71.23453194398171,
+  "name": "Parc de la Pointe-aux-Lièvres",
+  "station_id": "37"
+ },
+ "38": {
+  "address": "3e Rue / 3e Avenue",
+  "capacity": 24,
+  "lat": 46.822100909007546,
+  "lon": -71.22555066618058,
+  "name": "3e Rue / 3e Avenue",
+  "station_id": "38"
+ },
+ "39": {
+  "address": "13e Rue / 1ère Avenue",
+  "capacity": 20,
+  "lat": 46.827114873941426,
+  "lon": -71.23470697516585,
+  "name": "13e Rue / 1re Avenue",
+  "station_id": "39"
+ },
+ "4": {
+  "address": "37 Rue Dalhousie",
+  "capacity": 16,
+  "lat": 46.812146312979735,
+  "lon": -71.20227632353003,
+  "name": "Traverse",
+  "station_id": "4"
+ },
+ "40": {
+  "address": "Cégep Limoilou",
+  "capacity": 20,
+  "lat": 46.83056247988369,
+  "lon": -71.22837657406617,
+  "name": "Cégep Limoilou - Limoilou",
+  "station_id": "40"
+ },
+ "41": {
+  "address": "Parc de l'Anse-à-Cartier",
+  "capacity": 24,
+  "lat": 46.82497869,
+  "lon": -71.2347588,
+  "name": "Parc de l'Anse-à-Cartier",
+  "station_id": "41"
+ },
+ "42": {
+  "address": "Grand Marché",
+  "capacity": 16,
+  "lat": 46.8294326924675,
+  "lon": -71.24406570853023,
+  "name": "ExpoCité - Grand Marché",
+  "station_id": "42"
+ },
+ "43": {
+  "address": "ExpoCité",
+  "capacity": 16,
+  "lat": 46.826552659765404,
+  "lon": -71.24597805079398,
+  "name": "ExpoCité - Place Jean-Béliveau",
+  "station_id": "43"
+ },
+ "44": {
+  "address": "Transfert",
+  "capacity": 24,
+  "lat": 46.813485161116674,
+  "lon": -71.21933000611685,
+  "name": "Saint-Vallier E. / Lépine",
+  "station_id": "44"
+ },
+ "45": {
+  "address": "Des Gouverneurs",
+  "capacity": 15,
+  "lat": 46.8113080501692,
+  "lon": -71.20505394863508,
+  "name": "Château Frontenac",
+  "station_id": "45"
+ },
+ "48": {
+  "address": "Lavigueur",
+  "capacity": 16,
+  "lat": 46.81240304152266,
+  "lon": -71.22041093634985,
+  "name": "Lavigueur / Sainte-Geneviève",
+  "station_id": "48"
+ },
+ "49": {
+  "address": "Collège Mérici",
+  "capacity": 28,
+  "lat": 46.79652641037149,
+  "lon": -71.2328549657563,
+  "name": "Collège Mérici",
+  "station_id": "49"
+ },
+ "5": {
+  "address": "18 Rue Pierre Olivier Chauveau",
+  "capacity": 24,
+  "lat": 46.813879821877265,
+  "lon": -71.2088559799137,
+  "name": "Hôtel de ville",
+  "station_id": "5"
+ },
+ "50": {
+  "address": "Brown / Père-Marquette",
+  "capacity": 28,
+  "lat": 46.80106563508459,
+  "lon": -71.23540046142958,
+  "name": "Brown / Père-Marquette",
+  "station_id": "50"
+ },
+ "51": {
+  "address": "Cardinal-Rouleau / Raymond-Casgrain",
+  "capacity": 20,
+  "lat": 46.79751457389288,
+  "lon": -71.24431075977705,
+  "name": "Raymond-Casgrain / Cardinal-Rouleau",
+  "station_id": "51"
+ },
+ "52": {
+  "address": "La Cité Verte",
+  "capacity": 16,
+  "lat": 46.79775453955422,
+  "lon": -71.24919774460218,
+  "name": "La Cité Verte",
+  "station_id": "52"
+ },
+ "54": {
+  "address": "Sheppard / William",
+  "capacity": 21,
+  "lat": 46.784040811002114,
+  "lon": -71.24939086365126,
+  "name": "Sheppard / William",
+  "station_id": "54"
+ },
+ "55": {
+  "address": "Maguire / Sheppard",
+  "capacity": 15,
+  "lat": 46.78194791566562,
+  "lon": -71.25260951446913,
+  "name": "Maguire / Sheppard",
+  "station_id": "55"
+ },
+ "56": {
+  "address": "Parc Anet-Gomin",
+  "capacity": 16,
+  "lat": 46.7865771551821,
+  "lon": -71.25817778038405,
+  "name": "Parc Anet-Gomin",
+  "station_id": "56"
+ },
+ "57": {
+  "address": "Hélène-Boullé / Du Bon-Air",
+  "capacity": 20,
+  "lat": 46.78938334025807,
+  "lon": -71.26476528572462,
+  "name": "Hélène-Boullé / Du Bon-Air",
+  "station_id": "57"
+ },
+ "58": {
+  "address": "Parc Myrand",
+  "capacity": 24,
+  "lat": 46.787372378242026,
+  "lon": -71.26640411543272,
+  "name": "Parc Myrand",
+  "station_id": "58"
+ },
+ "59": {
+  "address": "Myrand / Géronce-Gariépy",
+  "capacity": 20,
+  "lat": 46.785085850704306,
+  "lon": -71.26487257408522,
+  "name": "Myrand / Liénard",
+  "station_id": "59"
+ },
+ "6": {
+  "address": "1113 Rue De L'Église",
+  "capacity": 34,
+  "lat": 46.81433964390105,
+  "lon": -71.22489827203177,
+  "name": "Place Jacques-Cartier",
+  "station_id": "6"
+ },
+ "60": {
+  "address": "ULaval - Charles-De Koninck",
+  "capacity": 24,
+  "lat": 46.78170373592318,
+  "lon": -71.27422868526473,
+  "name": "ULaval - Charles-De Koninck",
+  "station_id": "60"
+ },
+ "61": {
+  "address": "ULaval - Alphonse-Desjardins",
+  "capacity": 24,
+  "lat": 46.77878224539512,
+  "lon": -71.27043994680358,
+  "name": "ULaval - Alphonse-Desjardins",
+  "station_id": "61"
+ },
+ "62": {
+  "address": "ULaval - PEPS",
+  "capacity": 32,
+  "lat": 46.78331900547899,
+  "lon": -71.27606006788633,
+  "name": "ULaval - PEPS",
+  "station_id": "62"
+ },
+ "63": {
+  "address": "ULaval - Ferdinand-Vandry",
+  "capacity": 32,
+  "lat": 46.77901001088584,
+  "lon": -71.27655091213606,
+  "name": "ULaval - Adrien-Pouliot",
+  "station_id": "63"
+ },
+ "64": {
+  "address": "Cégep de Sainte-Foy",
+  "capacity": 24,
+  "lat": 46.78611924914782,
+  "lon": -71.2852852318077,
+  "name": "Cégep de Sainte-Foy",
+  "station_id": "64"
+ },
+ "65": {
+  "address": "De Prével / Quatre-Bourgeois",
+  "capacity": 16,
+  "lat": 46.784264743767324,
+  "lon": -71.28445538210295,
+  "name": "De Prével / Quatre-Bourgeois",
+  "station_id": "65"
+ },
+ "66": {
+  "address": "Pente-Douce / Montmagny",
+  "capacity": 24,
+  "lat": 46.804249272486686,
+  "lon": -71.2388444178047,
+  "name": "Montmagny / De la Pente-Douce",
+  "station_id": "66"
+ },
+ "67": {
+  "address": "Raoul-Jobin / Marie-de-l'Incarnation",
+  "capacity": 20,
+  "lat": 46.807598406228216,
+  "lon": -71.24416592049025,
+  "name": "Raoul-Jobin / Marie-de-l'Incarnation",
+  "station_id": "67"
+ },
+ "68": {
+  "address": "Saint-Germain / Boisseau",
+  "capacity": 24,
+  "lat": 46.80986516079751,
+  "lon": -71.23799549865149,
+  "name": "Bayard / Boisseau",
+  "station_id": "68"
+ },
+ "69": {
+  "address": "Signaï / Christophe-Colomb",
+  "capacity": 28,
+  "lat": 46.80985414622597,
+  "lon": -71.23170705961607,
+  "name": "Signaï / Christophe-Colomb",
+  "station_id": "69"
+ },
+ "7": {
+  "address": "270 Rue de Carillon",
+  "capacity": 12,
+  "lat": 46.812007911002574,
+  "lon": -71.23967590259932,
+  "name": "Parc Durocher",
+  "station_id": "7"
+ },
+ "70": {
+  "address": "Bourdages / Monseigneur-Plessis",
+  "capacity": 20,
+  "lat": 46.8173360907344,
+  "lon": -71.24077292608641,
+  "name": "Bourdages / Monseigneur-Plessis",
+  "station_id": "70"
+ },
+ "71": {
+  "address": "7e Rue / 6e Avenue",
+  "capacity": 20,
+  "lat": 46.82613489140135,
+  "lon": -71.22456701921843,
+  "name": "7e Rue / 6e Avenue",
+  "station_id": "71"
+ },
+ "72": {
+  "address": "11e Rue / 3e Avenue",
+  "capacity": 20,
+  "lat": 46.82705982745014,
+  "lon": -71.23070659565352,
+  "name": "11e Rue / 3e Avenue",
+  "station_id": "72"
+ },
+ "73": {
+  "address": "Bourdon / 1ère Avenue",
+  "capacity": 20,
+  "lat": 46.830915391388416,
+  "lon": -71.24147030043028,
+  "name": "D'Assise / Boisclerc",
+  "station_id": "73"
+ },
+ "74": {
+  "address": "Patro Roc-Amadour",
+  "capacity": 16,
+  "lat": 46.833607,
+  "lon": -71.242095,
+  "name": "Patro Roc-Amadour",
+  "station_id": "74"
+ },
+ "75": {
+  "address": "Perrault / 24e Rue",
+  "capacity": 20,
+  "lat": 46.840967,
+  "lon": -71.232018,
+  "name": "Perrault / 24e Rue",
+  "station_id": "75"
+ },
+ "76": {
+  "address": "Hôpital de l'Enfant-Jésus",
+  "capacity": 16,
+  "lat": 46.83822969588059,
+  "lon": -71.22451224173356,
+  "name": "De Fondville / De La Ronde",
+  "station_id": "76"
+ },
+ "77": {
+  "address": "Parc Bardy",
+  "capacity": 24,
+  "lat": 46.84274855398623,
+  "lon": -71.22500825686221,
+  "name": "Parc Bardy",
+  "station_id": "77"
+ },
+ "78": {
+  "address": "De la Trinité / De Villebon",
+  "capacity": 16,
+  "lat": 46.834044048889574,
+  "lon": -71.22124108003996,
+  "name": "De la Trinité / De Villebon",
+  "station_id": "78"
+ },
+ "79": {
+  "address": "Domaine de Maizerets",
+  "capacity": 20,
+  "lat": 46.836559019801065,
+  "lon": -71.21610130059433,
+  "name": "Domaine de Maizerets",
+  "station_id": "79"
+ },
+ "8": {
+  "address": "800 Rue D'Youville",
+  "capacity": 32,
+  "lat": 46.81230646289787,
+  "lon": -71.21437238651318,
+  "name": "Place D’Youville",
+  "station_id": "8"
+ },
+ "80": {
+  "address": "Transfert",
+  "capacity": 16,
+  "lat": 46.778833676396516,
+  "lon": -71.25806780981443,
+  "name": "Parc du Buisson",
+  "station_id": "80"
+ },
+ "81": {
+  "address": "Transfert2",
+  "capacity": 24,
+  "lat": 46.780269132564186,
+  "lon": -71.28998810874842,
+  "name": "Samuel-King / Quatre-Bourgeois",
+  "station_id": "81"
+ },
+ "83": {
+  "address": "Transfert4",
+  "capacity": 16,
+  "lat": 46.812828916463346,
+  "lon": -71.25841113256834,
+  "name": "Arthur-Gagné / Gauvin",
+  "station_id": "83"
+ },
+ "84": {
+  "address": "Transfert5",
+  "capacity": 16,
+  "lat": 46.77619106902104,
+  "lon": -71.29565058748464,
+  "name": "Wolfe / Quatre-Bourgeois",
+  "station_id": "84"
+ },
+ "85": {
+  "address": "Transfert6",
+  "capacity": 23,
+  "lat": 46.777906074001365,
+  "lon": -71.29445197510145,
+  "name": "IUCPQ",
+  "station_id": "85"
+ },
+ "86": {
+  "address": "Transfert7",
+  "capacity": 20,
+  "lat": 46.81494476999434,
+  "lon": -71.26287253830263,
+  "name": "Bernatchez / Beaucage",
+  "station_id": "86"
+ },
+ "88": {
+  "address": "Transfert 9",
+  "capacity": 16,
+  "lat": 46.834855090625936,
+  "lon": -71.24747348153917,
+  "name": "Des Bouleaux O. / Du Colisée",
+  "station_id": "88"
+ },
+ "89": {
+  "address": "Transfert10",
+  "capacity": 20,
+  "lat": 46.79147778291843,
+  "lon": -71.2678940825405,
+  "name": "De la Place Philippe / Richer",
+  "station_id": "89"
+ },
+ "9": {
+  "address": "387 Rue Saint-Jean",
+  "capacity": 28,
+  "lat": 46.808995790506394,
+  "lon": -71.22241758851497,
+  "name": "Église Saint-Jean-Baptiste",
+  "station_id": "9"
+ },
+ "90": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.78055383141489,
+  "lon": -71.27878653334997,
+  "name": "ULaval - Abitibi-Price",
+  "station_id": "90"
+ },
+ "91": {
+  "address": "",
+  "capacity": 16,
+  "lat": 46.81830997873901,
+  "lon": -71.22671680722696,
+  "name": "Parc Victoria - De la Maréchaussée",
+  "station_id": "91"
+ },
+ "92": {
+  "address": "",
+  "capacity": 20,
+  "lat": 46.82423367281973,
+  "lon": -71.24042930975291,
+  "name": "Cartier-Brébeuf",
+  "station_id": "92"
+ },
+ "93": {
+  "address": "Transfert 8",
+  "capacity": 16,
+  "lat": 46.817040875261036,
+  "lon": -71.25809817129857,
+  "name": "Du Chanoine-Côté / Beaucage",
+  "station_id": "93"
+ },
+ "94": {
+  "address": "Test",
+  "capacity": 20,
+  "lat": 46.834360438344426,
+  "lon": -71.23200630489376,
+  "name": "CFP de Limoilou",
+  "station_id": "94"
+ },
+ "95": {
+  "address": "Bibliothèque Monique-Corriveau",
+  "capacity": 18,
+  "lat": 46.7702541223334,
+  "lon": -71.2935252718868,
+  "name": "Bibliothèque Monique-Corriveau",
+  "station_id": "95"
+ },
+ "96": {
+  "address": "Des Peupliers / 4e Avenue",
+  "capacity": 16,
+  "lat": 46.83996958096268,
+  "lon": -71.24089417449315,
+  "name": "Des Peupliers E. / 4e Avenue",
+  "station_id": "96"
+ },
+ "98": {
+  "address": "Laurier / Robert-Bourassa",
+  "capacity": 20,
+  "lat": 46.77235789261812,
+  "lon": -71.27423019171363,
+  "name": "Alexander / Du Colonel-Mathieu",
+  "station_id": "98"
+ },
+ "99": {
+  "address": "Chapdelaine / De Belmont",
+  "capacity": 20,
+  "lat": 46.790654368859364,
+  "lon": -71.27450515983563,
+  "name": "Chapdelaine / De Belmont",
+  "station_id": "99"
+ }
+}

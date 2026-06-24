@@ -39,10 +39,35 @@ class Station:
     bikes_available: int
     docks_available: int
     last_reported: int  # unix timestamp
+    ebikes: int = 0  # e-bikes available (num_bikes_available_types.ebike)
+    mechanical: int = 0  # mechanical bikes available
+    bikes_disabled: int = 0  # broken bikes, not counted as available
+    docks_disabled: int = 0  # out-of-order docks
 
     def distance_to(self, lat: float, lon: float) -> float:
         """Great-circle distance in metres from (lat, lon) to this station."""
         return _haversine(self.lat, self.lon, lat, lon)
+
+    def static_info(self) -> dict:
+        """The slowly-changing fields, keyed for the committed stations.json."""
+        return {
+            "station_id": self.station_id,
+            "name": self.name,
+            "lat": self.lat,
+            "lon": self.lon,
+            "capacity": self.capacity,
+            "address": self.address,
+        }
+
+    def dynamic_state(self) -> dict:
+        """The volatile subset used for change-detection and the JSONL log."""
+        return {
+            "bikes": self.bikes_available,
+            "docks": self.docks_available,
+            "status": self.status,
+            "ebikes": self.ebikes,
+            "mechanical": self.mechanical,
+        }
 
 
 def _fetch_json(url: str, timeout: float = 10.0) -> dict:
@@ -83,6 +108,7 @@ def fetch_stations(lang: str = "en", include_out_of_service: bool = False) -> li
             continue  # station with no live status yet
         if not include_out_of_service and st.get("status") == "NOT_IN_SERVICE":
             continue
+        types = st.get("num_bikes_available_types") or {}
         stations.append(
             Station(
                 station_id=sid,
@@ -95,6 +121,10 @@ def fetch_stations(lang: str = "en", include_out_of_service: bool = False) -> li
                 bikes_available=int(st.get("num_bikes_available", 0)),
                 docks_available=int(st.get("num_docks_available", 0)),
                 last_reported=int(st.get("last_reported", 0)),
+                ebikes=int(types.get("ebike", 0)),
+                mechanical=int(types.get("mechanical", 0)),
+                bikes_disabled=int(st.get("num_bikes_disabled", 0)),
+                docks_disabled=int(st.get("num_docks_disabled", 0)),
             )
         )
     return stations
