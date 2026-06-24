@@ -3,7 +3,7 @@ description_html: |
   Explore the àVélo Québec bikeshare history collected by
   <a href="https://github.com/VincentBerg/aVeloInspector">aVeloInspector</a>.
   The <strong>observation</strong> table is a change-log (a row per station
-  whenever its availability changes), sampled ~every 5 min.
+  whenever its availability changes), sampled ~every 75s.
 license: ""
 source: àVélo GBFS feed (PBSC)
 source_url: https://aveloquebec.ca/stations/

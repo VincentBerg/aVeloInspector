@@ -1,8 +1,9 @@
 name: poll-stations
 
 # Git-scraping: poll the àVélo feeds on a schedule and commit any changes.
-# Note: GitHub free-tier cron has a ~5 min minimum and can be delayed or skipped
-# under load — fine for availability-trend history, not second-accurate.
+# GitHub cron has a hard 5-min minimum, so each run polls 4x at ~75s spacing
+# (≈ the source's 1-2 min update rhythm) and commits once at the end. The loop
+# is kept under 5 min so runs don't overlap the next scheduled tick.
 
 on:
   schedule:
@@ -27,8 +28,13 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Poll feeds
-        run: python poll.py
+      - name: Poll feeds (4x at ~75s spacing)
+        run: |
+          for i in 1 2 3 4; do
+            echo "--- poll $i/4 ---"
+            python poll.py
+            [ "$i" -lt 4 ] && sleep 75
+          done
 
       - name: Commit changes
         run: |

@@ -22,8 +22,9 @@ https://quebec.publicbikesystem.net/customer/ube/gbfs/v1/
 | `{lang}/station_status` | live: `num_bikes_available`, `num_docks_available`, `status`, `num_bikes_available_types`, `last_reported` |
 
 The aggregated feed regenerates every ~30s (`ttl: 29`); individual stations
-report on a ~1–2 min rhythm. Polling runs every ~5 min — enough to capture
-availability trends, and the practical floor for GitHub Actions cron.
+report on a ~1–2 min rhythm. GitHub Actions cron has a hard 5-min floor, so each
+scheduled run polls **4× at ~75s spacing** and commits once — giving an
+effective ~75s sampling resolution that matches the source's update rhythm.
 
 ## Data layout (`data/`, committed)
 
