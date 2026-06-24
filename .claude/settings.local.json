@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:aveloquebec.ca)",
+      "Bash(curl -s -A \"Mozilla/5.0\" https://aveloquebec.ca/stations/)",
+      "Bash(curl *)",
+      "Bash(.venv/bin/python --version)",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(.venv/bin/python *)"
+    ]
+  }
+}
