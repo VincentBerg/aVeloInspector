@@ -1,16 +1,19 @@
 name: poll-stations
 
-# Git-scraping: poll the àVélo feeds on a schedule and commit any changes.
-# GitHub cron has a hard 5-min minimum, so each run polls 4x at ~75s spacing
-# (≈ the source's 1-2 min update rhythm) and commits once at the end. The loop
-# is kept under 5 min so runs don't overlap the next scheduled tick.
+# Git-scraping the àVélo feeds. GitHub throttles scheduled (cron) events hard on
+# new/low-activity repos — ours fires only every ~2-3h, not every 5 min. So
+# instead of a short run per tick, each run is a LONG-LIVED poller: it polls
+# ~every 75s for up to 5.5h, committing every ~5 min. With the scheduler firing
+# every few hours and runs queued back-to-back (concurrency below), coverage is
+# effectively continuous. workflow_dispatch lets you kick off a poller manually.
 
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/5 * * * *"   # best-effort; GitHub decides actual cadence
   workflow_dispatch: {}
 
-# Don't let a slow run overlap the next scheduled one.
+# One poller at a time. A new trigger queues as "pending" and starts the moment
+# the running one ends, so runs chain together for continuous coverage.
 concurrency:
   group: poll-stations
   cancel-in-progress: false
@@ -21,6 +24,7 @@ permissions:
 jobs:
   poll:
     runs-on: ubuntu-latest
+    timeout-minutes: 350   # under the 6h hard cap; loop runs ~5.5h then flushes
     steps:
       - uses: actions/checkout@v4
 
@@ -28,22 +32,29 @@ jobs:
         with:
           python-version: "3.13"
 
-      - name: Poll feeds (4x at ~75s spacing)
-        run: |
-          for i in 1 2 3 4; do
-            echo "--- poll $i/4 ---"
-            python poll.py
-            if [ "$i" -lt 4 ]; then sleep 75; fi
-          done
-
-      - name: Commit changes
+      - name: Poll continuously (~75s for up to 5.5h)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-          else
-            git commit -m "data: poll $(date -u +%FT%TZ)"
-            git push
-          fi
+
+          commit_and_push() {
+            git add data/
+            if git diff --cached --quiet; then return 0; fi
+            git commit -q -m "data: poll $(date -u +%FT%TZ)"
+            for attempt in 1 2 3; do
+              if git push -q; then return 0; fi
+              echo "push rejected, rebasing and retrying ($attempt)"
+              git pull --rebase --autostash -q || true
+            done
+            echo "WARNING: push failed after retries"
+          }
+
+          end=$(( SECONDS + 19800 ))   # 5.5 hours
+          i=0
+          while [ "$SECONDS" -lt "$end" ]; do
+            python poll.py
+            i=$(( i + 1 ))
+            if [ $(( i % 4 )) -eq 0 ]; then commit_and_push; fi   # ~every 5 min
+            sleep 75
+          done
+          commit_and_push   # flush any remaining changes
