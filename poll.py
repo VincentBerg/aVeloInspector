@@ -33,6 +33,12 @@ def _load_json(path: str, default):
             return json.load(f)
     except FileNotFoundError:
         return default
+    except json.JSONDecodeError:
+        # Corrupt/half-written file (e.g. leftover merge markers). Don't crash
+        # the long-lived poller — fall back to the default and let this run
+        # rewrite a clean file. For state.json this re-logs one full snapshot.
+        print(f"warning: {path} is not valid JSON; ignoring it")
+        return default
 
 
 def _dump_json(path: str, obj) -> None:

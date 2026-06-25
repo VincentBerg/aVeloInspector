@@ -1,0 +1,11 @@
+# Git-scraping merge strategy, so concurrent/queued pollers never leave
+# conflict markers (which would corrupt state.json and crash poll.py).
+#
+# Append-only history logs: union-merge keeps every line from both sides.
+data/*.jsonl       merge=union
+
+# Derived snapshots, fully rewritten each poll. A conflict here is meaningless
+# (the next poll regenerates them), so the custom "keep-mine" driver below
+# resolves it without markers. Requires `git config merge.keepmine.driver true`.
+data/state.json    merge=keepmine
+data/stations.json merge=keepmine

@@ -37,6 +37,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
+          # Custom merge driver referenced by .gitattributes for the ephemeral
+          # snapshot files: "true" succeeds without touching the file, so the
+          # version already in the tree wins and no conflict markers are written.
+          git config merge.keepmine.driver true
+
           commit_and_push() {
             git add data/
             if git diff --cached --quiet; then return 0; fi
@@ -44,7 +49,16 @@ jobs:
             for attempt in 1 2 3; do
               if git push -q; then return 0; fi
               echo "push rejected, rebasing and retrying ($attempt)"
-              git pull --rebase --autostash -q || true
+              # .gitattributes auto-resolves every data file (union for the
+              # append-only logs, keep-mine for the snapshots), so a clean run
+              # never conflicts. If a rebase still fails for any reason, abort
+              # it so the working tree is NEVER left mid-rebase with conflict
+              # markers (which would corrupt state.json and crash poll.py).
+              if ! git pull --rebase --autostash -q; then
+                echo "rebase failed, aborting to keep the tree clean"
+                git rebase --abort 2>/dev/null || true
+                git merge --abort 2>/dev/null || true
+              fi
             done
             echo "WARNING: push failed after retries"
           }
