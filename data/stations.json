@@ -1423,14 +1423,6 @@
   "name": "La Cité Verte",
   "station_id": "52"
  },
- "54": {
-  "address": "Sheppard / William",
-  "capacity": 0,
-  "lat": 46.784040811002114,
-  "lon": -71.24939086365126,
-  "name": "Sheppard / William",
-  "station_id": "54"
- },
  "55": {
   "address": "Maguire / Sheppard",
   "capacity": 15,
