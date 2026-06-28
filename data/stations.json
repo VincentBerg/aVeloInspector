@@ -631,14 +631,6 @@
   "name": "Bibliothèque Neufchâtel",
   "station_id": "173"
  },
- "174": {
-  "address": "Chauveau / De l'Ormière",
-  "capacity": 12,
-  "lat": 46.832685480953096,
-  "lon": -71.34905000475464,
-  "name": "Chauveau / De l'Ormière",
-  "station_id": "174"
- },
  "175": {
   "address": "",
   "capacity": 20,
