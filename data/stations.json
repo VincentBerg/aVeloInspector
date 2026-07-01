@@ -1279,14 +1279,6 @@
   "name": "Saint-Joseph E. / Caron",
   "station_id": "34"
  },
- "35": {
-  "address": "Place Roger-Lemelin",
-  "capacity": 20,
-  "lat": 46.8070057051584,
-  "lon": -71.2360961572326,
-  "name": "Place Roger-Lemelin",
-  "station_id": "35"
- },
  "36": {
   "address": "Parc Victoria",
   "capacity": 24,
