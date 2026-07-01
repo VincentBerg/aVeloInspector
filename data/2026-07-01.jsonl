@@ -5976,3 +5976,17 @@
 {"ts": 1782890512, "station_id": "94", "bikes": 9, "docks": 10, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
 {"ts": 1782890512, "station_id": "165", "bikes": 9, "docks": 7, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
 {"ts": 1782890512, "station_id": "207", "bikes": 3, "docks": 19, "status": "IN_SERVICE", "ebikes": 3, "mechanical": 0}
+{"ts": 1782890589, "station_id": "6", "bikes": 15, "docks": 19, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
+{"ts": 1782890589, "station_id": "32", "bikes": 10, "docks": 16, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1782890589, "station_id": "94", "bikes": 10, "docks": 9, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1782890589, "station_id": "224", "bikes": 12, "docks": 4, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1782890665, "station_id": "38", "bikes": 10, "docks": 14, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1782890665, "station_id": "94", "bikes": 11, "docks": 9, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
+{"ts": 1782890665, "station_id": "175", "bikes": 14, "docks": 4, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1782890741, "station_id": "114", "bikes": 0, "docks": 21, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1782890741, "station_id": "175", "bikes": 15, "docks": 4, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
+{"ts": 1782890741, "station_id": "207", "bikes": 2, "docks": 20, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1782890741, "station_id": "221", "bikes": 11, "docks": 3, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
+{"ts": 1782890741, "station_id": "222", "bikes": 18, "docks": 2, "status": "IN_SERVICE", "ebikes": 18, "mechanical": 0}
+{"ts": 1782890817, "station_id": "94", "bikes": 10, "docks": 9, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1782890817, "station_id": "221", "bikes": 10, "docks": 4, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
