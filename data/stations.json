@@ -647,14 +647,6 @@
   "name": "Parc Évangéline",
   "station_id": "175"
  },
- "176": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.852400648827846,
-  "lon": -71.20962011936149,
-  "name": "Parc Saint-Ignace",
-  "station_id": "176"
- },
  "177": {
   "address": "",
   "capacity": 16,
