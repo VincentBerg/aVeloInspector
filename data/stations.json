@@ -1399,14 +1399,6 @@
   "name": "Collège Mérici",
   "station_id": "49"
  },
- "5": {
-  "address": "18 Rue Pierre Olivier Chauveau",
-  "capacity": 24,
-  "lat": 46.813879821877265,
-  "lon": -71.2088559799137,
-  "name": "Hôtel de ville",
-  "station_id": "5"
- },
  "50": {
   "address": "Brown / Père-Marquette",
   "capacity": 28,
