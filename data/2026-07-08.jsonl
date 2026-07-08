@@ -5710,3 +5710,17 @@
 {"ts": 1783490272, "station_id": "34", "bikes": 9, "docks": 10, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
 {"ts": 1783490272, "station_id": "54", "bikes": 11, "docks": 6, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
 {"ts": 1783490272, "station_id": "88", "bikes": 14, "docks": 1, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1783490348, "station_id": "25", "bikes": 8, "docks": 9, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1783490348, "station_id": "54", "bikes": 13, "docks": 4, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1783490348, "station_id": "135", "bikes": 10, "docks": 5, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1783490348, "station_id": "143", "bikes": 12, "docks": 4, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1783490348, "station_id": "223", "bikes": 8, "docks": 6, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1783490423, "station_id": "19", "bikes": 1, "docks": 15, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1783490423, "station_id": "24", "bikes": 9, "docks": 14, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1783490423, "station_id": "35", "bikes": 19, "docks": 0, "status": "IN_SERVICE", "ebikes": 19, "mechanical": 0}
+{"ts": 1783490423, "station_id": "171", "bikes": 9, "docks": 4, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1783490499, "station_id": "24", "bikes": 10, "docks": 13, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1783490499, "station_id": "102", "bikes": 14, "docks": 6, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1783490499, "station_id": "186", "bikes": 2, "docks": 12, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1783490574, "station_id": "140", "bikes": 10, "docks": 8, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1783490574, "station_id": "199", "bikes": 18, "docks": 2, "status": "IN_SERVICE", "ebikes": 18, "mechanical": 0}
