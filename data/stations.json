@@ -1,4 +1,12 @@
 {
+ "10": {
+  "address": "730 Rue Jacques-Parizeau",
+  "capacity": 32,
+  "lat": 46.80781090418463,
+  "lon": -71.21585520433806,
+  "name": "Parc de la Francophonie",
+  "station_id": "10"
+ },
  "100": {
   "address": "Musée des Plaines d'Abraham",
   "capacity": 17,
