@@ -648,10 +648,10 @@
   "station_id": "174"
  },
  "175": {
-  "address": "",
+  "address": "2601 Rue De La Sagouine",
   "capacity": 20,
-  "lat": 46.84872273244515,
-  "lon": -71.22740718844375,
+  "lat": 0.0,
+  "lon": 0.0,
   "name": "Parc Évangéline",
   "station_id": "175"
  },
