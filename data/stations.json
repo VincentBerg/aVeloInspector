@@ -791,6 +791,14 @@
   "name": "Dalhousie / Quai Saint-André",
   "station_id": "190"
  },
+ "191": {
+  "address": "216 Rue Georges-Cloutier",
+  "capacity": 12,
+  "lat": 46.857427,
+  "lon": -71.356383,
+  "name": "Georges-Cloutier / Des Cheminots",
+  "station_id": "191"
+ },
  "192": {
   "address": "",
   "capacity": 20,
