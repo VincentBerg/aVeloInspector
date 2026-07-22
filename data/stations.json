@@ -231,14 +231,6 @@
   "name": "Des Lilas O. / Du Colisée",
   "station_id": "128"
  },
- "129": {
-  "address": "Sasseville / De l'Église",
-  "capacity": 16,
-  "lat": 46.845218998505835,
-  "lon": -71.24478465122458,
-  "name": "42e Rue E. / 4e Avenue E.",
-  "station_id": "129"
- },
  "13": {
   "address": "Cégep Garneau",
   "capacity": 18,
