@@ -6662,3 +6662,17 @@
 {"ts": 1784971401, "station_id": "35", "bikes": 19, "docks": 0, "status": "IN_SERVICE", "ebikes": 19, "mechanical": 0}
 {"ts": 1784971401, "station_id": "174", "bikes": 6, "docks": 4, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
 {"ts": 1784971477, "station_id": "78", "bikes": 13, "docks": 2, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1784971554, "station_id": "4", "bikes": 1, "docks": 15, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1784971554, "station_id": "6", "bikes": 1, "docks": 33, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1784971554, "station_id": "96", "bikes": 14, "docks": 1, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1784971554, "station_id": "118", "bikes": 5, "docks": 6, "status": "IN_SERVICE", "ebikes": 5, "mechanical": 0}
+{"ts": 1784971629, "station_id": "6", "bikes": 0, "docks": 33, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1784971629, "station_id": "8", "bikes": 1, "docks": 26, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1784971629, "station_id": "118", "bikes": 6, "docks": 6, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
+{"ts": 1784971629, "station_id": "123", "bikes": 13, "docks": 3, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1784971629, "station_id": "143", "bikes": 14, "docks": 1, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1784971629, "station_id": "174", "bikes": 7, "docks": 4, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1784971629, "station_id": "179", "bikes": 13, "docks": 1, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1784971705, "station_id": "67", "bikes": 17, "docks": 3, "status": "IN_SERVICE", "ebikes": 17, "mechanical": 0}
+{"ts": 1784971705, "station_id": "81", "bikes": 17, "docks": 5, "status": "IN_SERVICE", "ebikes": 17, "mechanical": 0}
+{"ts": 1784971780, "station_id": "123", "bikes": 12, "docks": 3, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
