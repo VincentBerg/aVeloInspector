@@ -5060,3 +5060,6 @@
 {"ts": 1785489703, "station_id": "14", "bikes": 10, "docks": 5, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
 {"ts": 1785489703, "station_id": "165", "bikes": 6, "docks": 10, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
 {"ts": 1785489779, "station_id": "96", "bikes": 12, "docks": 4, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1785489857, "station_id": "8", "bikes": 3, "docks": 26, "status": "IN_SERVICE", "ebikes": 3, "mechanical": 0}
+{"ts": 1785490008, "station_id": "143", "bikes": 15, "docks": 0, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
+{"ts": 1785490008, "station_id": "224", "bikes": 3, "docks": 13, "status": "IN_SERVICE", "ebikes": 3, "mechanical": 0}
