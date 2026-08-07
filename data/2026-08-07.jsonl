@@ -5544,3 +5544,17 @@
 {"ts": 1786082863, "station_id": "40", "bikes": 16, "docks": 4, "status": "IN_SERVICE", "ebikes": 16, "mechanical": 0}
 {"ts": 1786082863, "station_id": "94", "bikes": 18, "docks": 1, "status": "IN_SERVICE", "ebikes": 18, "mechanical": 0}
 {"ts": 1786082863, "station_id": "224", "bikes": 13, "docks": 2, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1786082940, "station_id": "6", "bikes": 0, "docks": 32, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1786082940, "station_id": "19", "bikes": 13, "docks": 3, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1786082940, "station_id": "94", "bikes": 13, "docks": 6, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1786083016, "station_id": "13", "bikes": 9, "docks": 7, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1786083016, "station_id": "17", "bikes": 14, "docks": 4, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1786083016, "station_id": "195", "bikes": 15, "docks": 2, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
+{"ts": 1786083092, "station_id": "2", "bikes": 18, "docks": 6, "status": "IN_SERVICE", "ebikes": 18, "mechanical": 0}
+{"ts": 1786083092, "station_id": "9", "bikes": 0, "docks": 28, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1786083092, "station_id": "33", "bikes": 6, "docks": 17, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
+{"ts": 1786083092, "station_id": "40", "bikes": 17, "docks": 3, "status": "IN_SERVICE", "ebikes": 17, "mechanical": 0}
+{"ts": 1786083092, "station_id": "69", "bikes": 26, "docks": 1, "status": "IN_SERVICE", "ebikes": 26, "mechanical": 0}
+{"ts": 1786083092, "station_id": "91", "bikes": 4, "docks": 11, "status": "IN_SERVICE", "ebikes": 4, "mechanical": 0}
+{"ts": 1786083092, "station_id": "153", "bikes": 2, "docks": 12, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1786083092, "station_id": "190", "bikes": 1, "docks": 14, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
