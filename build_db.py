@@ -128,7 +128,10 @@ def build(db_path: str = DB_PATH) -> sqlite3.Connection:
             docks      INTEGER,
             status     TEXT,
             ebikes     INTEGER,
-            mechanical INTEGER
+            mechanical INTEGER,
+            db         INTEGER   -- signed change in `bikes` vs this station's
+                                 -- previous observation (NULL for the first).
+                                 -- Precomputed below; see the UPDATE in build().
         );
         CREATE TABLE suggested_station (
             lat             REAL,
@@ -193,7 +196,33 @@ def build(db_path: str = DB_PATH) -> sqlite3.Connection:
             rows,
         )
 
-    conn.execute("CREATE INDEX idx_obs_station_ts ON observation (station_id, ts)")
+    # Precompute each observation's bike delta (change vs the same station's
+    # previous observation) once, at build time. Turnover — total absolute churn
+    # in available bikes between consecutive observations — is the basis for most
+    # of the saved analysis queries. Doing the LAG() here means those queries can
+    # SUM(ABS(db)) over an index instead of running a window function across the
+    # whole (million-plus-row) observation table on every request, which was
+    # blowing past Datasette's sql_time_limit_ms.
+    conn.execute(
+        """
+        UPDATE observation AS o
+        SET db = d.delta
+        FROM (
+            SELECT rowid AS rid,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS delta
+            FROM observation
+        ) AS d
+        WHERE d.rid = o.rowid
+        """
+    )
+
+    # (station_id, ts, db) serves the history / heat-map range scans and also
+    # makes the by-day and by-hour turnover queries index-only. (station_id, db)
+    # is a compact covering index for the all-time per-station turnover sums.
+    conn.execute("CREATE INDEX idx_obs_station_ts ON observation (station_id, ts, db)")
+    conn.execute("CREATE INDEX idx_obs_station_db ON observation (station_id, db)")
     conn.commit()
     return conn
 

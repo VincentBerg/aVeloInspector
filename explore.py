@@ -27,6 +27,9 @@ def main() -> int:
             "-m", os.path.join(HERE, "metadata.yaml"),
             "--template-dir", os.path.join(HERE, "templates"),
             "--port", "8001",
+            # The per-day/per-hour turnover views scan the whole observation
+            # table; give them headroom over the 1s default as history grows.
+            "--setting", "sql_time_limit_ms", "3000",
         ]
     )
 

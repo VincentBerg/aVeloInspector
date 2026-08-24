@@ -67,6 +67,7 @@ databases:
           status: IN_SERVICE, MAINTENANCE, or PLANNED.
           ebikes: Of `bikes`, how many are e-bikes.
           mechanical: Of `bikes`, how many are mechanical (àVélo is ~all-electric).
+          db: Change in `bikes` since this station's previous observation (NULL for its first). Precomputed at build time; `SUM(ABS(db))` is a station's bike turnover.
     queries:
       find_station:
         title: 🔎 Find a station (by name)
@@ -87,21 +88,14 @@ databases:
           between consecutive observations; a proxy for how busy a station is.
           Note: ~75s sampling makes this a lower bound.
         sql: |-
-          WITH deltas AS (
-            SELECT station_id,
-                   bikes - LAG(bikes) OVER (
-                     PARTITION BY station_id ORDER BY ts
-                   ) AS d
-            FROM observation
-          )
           SELECT s.name                  AS "Station",
-                 SUM(ABS(d))             AS "Bike turnover",
+                 SUM(ABS(o.db))          AS "Bike turnover",
                  COUNT(*)                AS "Changes recorded",
-                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
-          FROM deltas
+                 ROUND(SUM(ABS(o.db)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
+          FROM observation o
           JOIN station s USING (station_id)
-          WHERE d IS NOT NULL
-          GROUP BY deltas.station_id
+          WHERE o.db IS NOT NULL
+          GROUP BY o.station_id
           ORDER BY "Bike turnover" DESC
           LIMIT 25;
 
@@ -114,22 +108,15 @@ databases:
           Only stations with at least one recorded change are shown; ~75s sampling
           makes turnover a lower bound.
         sql: |-
-          WITH deltas AS (
-            SELECT station_id,
-                   bikes - LAG(bikes) OVER (
-                     PARTITION BY station_id ORDER BY ts
-                   ) AS d
-            FROM observation
-          )
           SELECT s.name                  AS "Station",
                  s.neighborhood          AS "Neighborhood",
-                 SUM(ABS(d))             AS "Bike turnover",
+                 SUM(ABS(o.db))          AS "Bike turnover",
                  COUNT(*)                AS "Changes recorded",
-                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
-          FROM deltas
+                 ROUND(SUM(ABS(o.db)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
+          FROM observation o
           JOIN station s USING (station_id)
-          WHERE d IS NOT NULL
-          GROUP BY deltas.station_id
+          WHERE o.db IS NOT NULL
+          GROUP BY o.station_id
           ORDER BY "Bike turnover" ASC, "Changes recorded" ASC
           LIMIT 25;
 
@@ -144,17 +131,10 @@ databases:
           that never changed still count in the denominator, so dead capacity
           pulls a neighborhood up the list. Covers the full collected history.
         sql: |-
-          WITH deltas AS (
-            SELECT station_id,
-                   bikes - LAG(bikes) OVER (
-                     PARTITION BY station_id ORDER BY ts
-                   ) AS d
+          WITH per_station AS (
+            SELECT station_id, SUM(ABS(db)) AS turnover
             FROM observation
-          ),
-          per_station AS (
-            SELECT station_id, SUM(ABS(d)) AS turnover
-            FROM deltas
-            WHERE d IS NOT NULL
+            WHERE db IS NOT NULL
             GROUP BY station_id
           )
           SELECT s.neighborhood                          AS "Neighborhood",
@@ -186,23 +166,16 @@ databases:
             FROM station
             WHERE neighborhood IS NOT NULL
             GROUP BY neighborhood
-          ),
-          deltas AS (
-            SELECT station_id, ts,
-                   bikes - LAG(bikes) OVER (
-                     PARTITION BY station_id ORDER BY ts
-                   ) AS d
-            FROM observation
           )
           SELECT date(o.ts, 'unixepoch', '-4 hours') AS "Day",
                  s.neighborhood                      AS "Neighborhood",
                  c.stations                          AS "Stations",
-                 SUM(ABS(o.d))                       AS "Bike turnover",
-                 ROUND(SUM(ABS(o.d)) * 1.0 / c.stations, 1) AS "Turnover per station"
-          FROM deltas o
+                 SUM(ABS(o.db))                      AS "Bike turnover",
+                 ROUND(SUM(ABS(o.db)) * 1.0 / c.stations, 1) AS "Turnover per station"
+          FROM observation o
           JOIN station s USING (station_id)
           JOIN counts c ON c.neighborhood = s.neighborhood
-          WHERE o.d IS NOT NULL AND s.neighborhood IS NOT NULL
+          WHERE o.db IS NOT NULL AND s.neighborhood IS NOT NULL
           GROUP BY "Day", s.neighborhood
           ORDER BY "Day" ASC, "Turnover per station" ASC;
 
@@ -348,17 +321,10 @@ databases:
           Total bike turnover by local hour (UTC−4, summer). Switch to the chart
           tab for a curve of commute peaks once enough history accumulates.
         sql: |-
-          WITH deltas AS (
-            SELECT ts,
-                   bikes - LAG(bikes) OVER (
-                     PARTITION BY station_id ORDER BY ts
-                   ) AS d
-            FROM observation
-          )
           SELECT CAST(strftime('%H', ts, 'unixepoch', '-4 hours') AS INTEGER) AS "Hour",
-                 SUM(ABS(d)) AS "Bike turnover"
-          FROM deltas
-          WHERE d IS NOT NULL
+                 SUM(ABS(db)) AS "Bike turnover"
+          FROM observation
+          WHERE db IS NOT NULL
           GROUP BY "Hour"
           ORDER BY "Hour";
 
