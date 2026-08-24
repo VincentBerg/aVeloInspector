@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>📍 Suggested àVélo stations — àVélo Inspector</title>
+
+  <link rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+          crossorigin=""></script>
+
+  <style>
+    html, body { margin: 0; height: 100%; font-family: system-ui, -apple-system, sans-serif; }
+    body { display: flex; flex-direction: column; }
+    header {
+      padding: 0.6rem 1rem; background: #1a1a1a; color: #fff;
+      display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    }
+    header h1 { font-size: 1.1rem; margin: 0; font-weight: 600; }
+    header a { color: #8ec5ff; text-decoration: none; }
+    header a:hover { text-decoration: underline; }
+    header .note { font-size: 0.8rem; color: #bbb; }
+    .spacer { flex: 1; }
+    #map { flex: 1; }
+    #status {
+      position: absolute; z-index: 1000; left: 50%; top: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0,0,0,0.7); color: #fff;
+      padding: 0.6rem 1rem; border-radius: 6px; font-size: 0.95rem;
+      display: none;
+    }
+    #legend {
+      position: absolute; z-index: 1000; left: 10px; bottom: 18px;
+      background: rgba(255,255,255,0.9); padding: 6px 8px; border-radius: 5px;
+      font-size: 0.75rem; color: #222; box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+    }
+    #legend .bar {
+      height: 8px; width: 140px; border-radius: 2px; margin-top: 3px;
+      background: linear-gradient(to right, blue, cyan, lime, yellow, red);
+    }
+    #legend .lbls { display: flex; justify-content: space-between; margin-top: 2px; }
+    #controls {
+      position: absolute; z-index: 1000; right: 10px; top: 10px; width: 175px;
+      background: rgba(255,255,255,0.93); padding: 9px 11px; border-radius: 6px;
+      font-size: 0.78rem; color: #222; box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+      display: flex; flex-direction: column; gap: 7px;
+    }
+    #controls label { display: flex; flex-direction: column; gap: 2px; }
+    #controls input[type=range] { width: 100%; margin: 0; }
+    #controls b { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📍 Suggested àVélo stations</h1>
+    <span class="note">Citizen requests from RTC's <em>Voie libre</em> consultation</span>
+    <span class="spacer"></span>
+    <a href="/stations">← back to àVélo Inspector</a>
+  </header>
+
+  <div id="map">
+    <div id="status"></div>
+    <div id="controls">
+      <label>Radius: <b id="vRadius">25</b> px
+        <input type="range" id="cRadius" min="8" max="80" step="1" value="25"></label>
+      <label>Intensity: <b id="vIntensity">1.0</b>×
+        <input type="range" id="cIntensity" min="0.3" max="3" step="0.1" value="1"></label>
+      <label>Opacity: <b id="vOpacity">0.85</b>
+        <input type="range" id="cOpacity" min="0.2" max="1" step="0.05" value="0.85"></label>
+      <label style="flex-direction:row; align-items:center; gap:5px;">
+        <input type="checkbox" id="cScale"> Scale radius with zoom</label>
+    </div>
+    <div id="legend">
+      <div>Suggestion density</div>
+      <div class="bar"></div>
+      <div class="lbls"><span>few</span><span>many</span></div>
+    </div>
+  </div>
+
+  <script>
+    // Centered on Québec City (data center; cf. inspector.py demo origin).
+    var map = L.map("map").setView([46.81, -71.22], 12);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    // Same value-weighted KERNEL DENSITY ESTIMATE as the live turnover heat map
+    // (templates/pages/heatmap.html): each suggested location contributes a
+    // Gaussian kernel scaled by how many people pinned it, and the kernels are
+    // summed. The kernel radius is fixed in SCREEN PIXELS, so hotspots MERGE when
+    // zoomed out and RESOLVE when zoomed in. Colour is normalized by the single
+    // most-requested location, so density — clusters of requests — reads hottest.
+
+    // Live-tunable via the controls panel; current values become the defaults.
+    var SIGMA_PX = 25;        // kernel standard deviation, in screen pixels
+    var INTENSITY = 1.0;      // multiplies density before colouring (warmth/contrast)
+    var OPACITY = 0.85;       // max layer opacity
+    var SCALE_WITH_ZOOM = false;  // false: fixed screen px (merges on zoom-out).
+    var ZREF = 13;            //  true: SIGMA_PX is the px size at this zoom and
+                              //  scales geographically from there (clamped).
+    var RES_CAP = 640;        // max render dimension (perf vs. sharpness)
+
+    var surfaceLayer = null;
+    var rows = [];         // last fetched [{name, lat, lon, weight}, …]
+    var maxWeight = 1;     // most-requested location — the colour reference
+
+    var statusEl = document.getElementById("status");
+
+    function showStatus(msg) {
+      if (msg) { statusEl.textContent = msg; statusEl.style.display = "block"; }
+      else { statusEl.style.display = "none"; }
+    }
+
+    // blue → cyan → lime → yellow → red ramp, matching the legend.
+    var GRAD = [
+      [0.00, [0, 0, 255]], [0.25, [0, 255, 255]], [0.50, [0, 255, 0]],
+      [0.75, [255, 255, 0]], [1.00, [255, 0, 0]]
+    ];
+    function colorFor(v) {
+      v = v < 0 ? 0 : (v > 1 ? 1 : v);
+      for (var i = 1; i < GRAD.length; i++) {
+        if (v <= GRAD[i][0]) {
+          var a = GRAD[i - 1], b = GRAD[i];
+          var t = (v - a[0]) / (b[0] - a[0]);
+          return [
+            Math.round(a[1][0] + t * (b[1][0] - a[1][0])),
+            Math.round(a[1][1] + t * (b[1][1] - a[1][1])),
+            Math.round(a[1][2] + t * (b[1][2] - a[1][2]))
+          ];
+        }
+      }
+      return GRAD[GRAD.length - 1][1];
+    }
+
+    function removeSurface() {
+      if (surfaceLayer) { map.removeLayer(surfaceLayer); surfaceLayer = null; }
+    }
+
+    function drawSurface() {
+      if (!rows.length) { removeSurface(); showStatus("No suggestions to show."); return; }
+      showStatus(null);
+
+      // Render a canvas covering the current viewport, at viewport resolution
+      // (capped). The overlay is then pinned to the viewport's geographic box.
+      var size = map.getSize();
+      var scale = Math.min(1, RES_CAP / Math.max(size.x, size.y, 1));
+      var W = Math.max(1, Math.round(size.x * scale));
+      var H = Math.max(1, Math.round(size.y * scale));
+
+      // Kernel size in screen px: fixed, or scaled geographically from ZREF
+      // (clamped so it never collapses to dots or fills the screen).
+      var basePx = SIGMA_PX;
+      if (SCALE_WITH_ZOOM) {
+        basePx = Math.max(6, Math.min(140, SIGMA_PX * Math.pow(2, map.getZoom() - ZREF)));
+      }
+      var sigma = Math.max(1, basePx * scale);       // kernel σ in canvas px
+      var twoSigma2 = 2 * sigma * sigma;
+      var R = Math.ceil(3 * sigma);                  // kernel reaches ~0 by 3σ
+
+      // Precompute the Gaussian kernel once (a (2R+1)² sprite), then just add it
+      // — O(points × kernel) instead of O(pixels × points).
+      var ksize = 2 * R + 1;
+      var kernel = new Float32Array(ksize * ksize);
+      for (var ky = 0; ky < ksize; ky++) {
+        for (var kx = 0; kx < ksize; kx++) {
+          var ddx = kx - R, ddy = ky - R;
+          kernel[ky * ksize + kx] = Math.exp(-(ddx * ddx + ddy * ddy) / twoSigma2);
+        }
+      }
+
+      // Accumulate weighted kernels into a density buffer.
+      var acc = new Float32Array(W * H);
+      for (var i = 0; i < rows.length; i++) {
+        var p = map.latLngToContainerPoint([rows[i].lat, rows[i].lon]);
+        var cx = Math.round(p.x * scale), cy = Math.round(p.y * scale);
+        if (cx < -R || cy < -R || cx > W + R || cy > H + R) continue;  // off-screen
+        var w = rows[i].weight / maxWeight;          // normalized; busiest spot = 1
+        var x0 = Math.max(0, cx - R), x1 = Math.min(W - 1, cx + R);
+        var y0 = Math.max(0, cy - R), y1 = Math.min(H - 1, cy + R);
+        for (var yy = y0; yy <= y1; yy++) {
+          var krow = (yy - cy + R) * ksize + (x0 - cx + R);
+          var arow = yy * W + x0;
+          for (var xx = x0; xx <= x1; xx++) {
+            acc[arow++] += w * kernel[krow++];
+          }
+        }
+      }
+
+      // Colourize: gradient by density, alpha ramps so empty areas stay clear.
+      var canvas = document.createElement("canvas");
+      canvas.width = W; canvas.height = H;
+      var ctx = canvas.getContext("2d");
+      var img = ctx.createImageData(W, H);
+      var data = img.data;
+      for (var j = 0; j < acc.length; j++) {
+        var t = acc[j] * INTENSITY;
+        if (t > 0) {
+          var rgb = colorFor(t);                     // colorFor clamps t to [0,1]
+          var a = Math.min(OPACITY, 3 * t);          // fade in from transparent
+          var idx = j * 4;
+          data[idx] = rgb[0]; data[idx + 1] = rgb[1]; data[idx + 2] = rgb[2];
+          data[idx + 3] = Math.round(a * 255);
+        }
+      }
+      ctx.putImageData(img, 0, 0);
+
+      // Pin the canvas to the viewport's geographic rectangle.
+      var nw = map.containerPointToLatLng(L.point(0, 0));
+      var se = map.containerPointToLatLng(L.point(size.x, size.y));
+      var bounds = [[se.lat, nw.lng], [nw.lat, se.lng]];
+      removeSurface();
+      surfaceLayer = L.imageOverlay(canvas.toDataURL(), bounds, { opacity: 1 }).addTo(map);
+    }
+
+    function load() {
+      showStatus("Loading…");
+      fetch("/stations/suggested_heatmap_data.json?_shape=array")
+        .then(function (r) {
+          if (!r.ok) throw new Error("HTTP " + r.status);
+          return r.json();
+        })
+        .then(function (d) {
+          rows = d;
+          maxWeight = rows.reduce(function (m, r) { return r.weight > m ? r.weight : m; }, 0) || 1;
+          drawSurface();
+        })
+        .catch(function (e) {
+          showStatus("Could not load suggestion data: " + e.message);
+        });
+    }
+
+    // Re-render at most once per frame while dragging a slider (stamping is
+    // cheap, but slider 'input' fires faster than we need to redraw).
+    var pending = false;
+    function rerender() {
+      if (pending || !rows.length) return;
+      pending = true;
+      requestAnimationFrame(function () { pending = false; drawSurface(); });
+    }
+    function bindSlider(id, valId, assign, fmt) {
+      var el = document.getElementById(id), out = document.getElementById(valId);
+      el.addEventListener("input", function () {
+        var v = parseFloat(el.value);
+        assign(v); out.textContent = fmt(v); rerender();
+      });
+    }
+    bindSlider("cRadius", "vRadius", function (v) { SIGMA_PX = v; }, function (v) { return v.toFixed(0); });
+    bindSlider("cIntensity", "vIntensity", function (v) { INTENSITY = v; }, function (v) { return v.toFixed(1); });
+    bindSlider("cOpacity", "vOpacity", function (v) { OPACITY = v; }, function (v) { return v.toFixed(2); });
+    document.getElementById("cScale").addEventListener("change", function () {
+      SCALE_WITH_ZOOM = this.checked; rerender();
+    });
+
+    // The canvas is built for the current viewport, so re-render on any pan or
+    // zoom (moveend fires for both).
+    map.on("moveend", function () { if (rows.length) drawSurface(); });
+    load();
+  </script>
+</body>
+</html>

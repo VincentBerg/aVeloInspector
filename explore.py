@@ -25,6 +25,7 @@ def main() -> int:
             sys.executable, "-m", "datasette",
             os.path.join(HERE, "stations.db"),
             "-m", os.path.join(HERE, "metadata.yaml"),
+            "--template-dir", os.path.join(HERE, "templates"),
             "--port", "8001",
         ]
     )

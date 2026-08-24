@@ -2,6 +2,12 @@ title: àVélo Inspector
 description_html: |
   <p>Explore the history of the <strong>àVélo Québec</strong> bikeshare network,
   collected by <a href="https://github.com/VincentBerg/aVeloInspector">aVeloInspector</a>.</p>
+  <p style="font-size:1.15rem;margin:0.8em 0;">
+    🌡️ <strong><a href="/heatmap">Open the live heat map →</a></strong>
+    &nbsp;see where bikes are churning hardest across the city.</p>
+  <p style="font-size:1.15rem;margin:0.8em 0;">
+    📍 <strong><a href="/suggested-heatmap">Open the suggestion heat map →</a></strong>
+    &nbsp;where citizens asked for àVélo stations (RTC <em>Voie libre</em> consultation).</p>
   <p><strong>Start here:</strong> the saved queries below answer the common
   questions. To find a station's id, use <a href="/stations/find_station">🔎 Find a station</a>
   or browse the <a href="/stations/station">station</a> table (a map of all stations
@@ -29,6 +35,22 @@ databases:
           lon: Longitude (decimal degrees).
           capacity: Total number of docks at the station.
           address: Civic address.
+          neighborhood: Québec City neighborhood (quartier) containing the station, derived from the city's official boundaries (Ville de Québec open data, CC-BY).
+      suggested_station:
+        description_html: |
+          Citizen-suggested àVélo locations dropped on RTC's
+          <a href="https://www.voielibre.rtcquebec.ca/">Voie libre</a> public
+          consultation map ("Carte interactive de Québec"). These are
+          <em>requests</em>, not real stations — separate from the live GBFS data.
+          A map appears above the table; see the
+          <a href="/suggested-heatmap">suggestion heat map</a> for density.
+        columns:
+          lat: Latitude (decimal degrees).
+          lon: Longitude (decimal degrees).
+          category: Pin category on the consultation map (here, àVélo).
+          neighborhood: Québec City neighborhood (quartier) the suggestion falls in, derived from the city's official boundaries (Ville de Québec open data, CC-BY).
+          nearest_station: Name of the closest existing àVélo station to this suggestion.
+          nearest_station_m: Straight-line distance in metres from this suggestion to the nearest existing station. High values flag an access gap — demand the current network doesn't reach.
       observation:
         sort_desc: ts
         description_html: |
@@ -82,6 +104,243 @@ databases:
           GROUP BY deltas.station_id
           ORDER BY "Bike turnover" DESC
           LIMIT 25;
+
+      coldest_stations:
+        title: ❄️ Least used stations (bike turnover)
+        description_html: |
+          The inverse of the <a href="/stations/hottest_stations">hottest stations</a>:
+          ranked by <em>lowest</em> churn — total absolute change in available bikes
+          between consecutive observations. A proxy for the quietest stations.
+          Only stations with at least one recorded change are shown; ~75s sampling
+          makes turnover a lower bound.
+        sql: |-
+          WITH deltas AS (
+            SELECT station_id,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM observation
+          )
+          SELECT s.name                  AS "Station",
+                 s.neighborhood          AS "Neighborhood",
+                 SUM(ABS(d))             AS "Bike turnover",
+                 COUNT(*)                AS "Changes recorded",
+                 ROUND(SUM(ABS(d)) * 1.0 / NULLIF(s.capacity, 0), 1) AS "Turnover per dock"
+          FROM deltas
+          JOIN station s USING (station_id)
+          WHERE d IS NOT NULL
+          GROUP BY deltas.station_id
+          ORDER BY "Bike turnover" ASC, "Changes recorded" ASC
+          LIMIT 25;
+
+      overserved_neighborhoods:
+        title: 🅿️ Over-served neighborhoods (turnover per station)
+        description_html: |
+          Which neighborhoods have the <em>most docks for the least use</em>.
+          For each neighborhood: how many stations it has and the total bike
+          turnover across all of them, normalized to <strong>turnover per
+          dock</strong> (and per station). Sorted so the most over-served — lots
+          of docking capacity, little churn — rise to the top. Docks at stations
+          that never changed still count in the denominator, so dead capacity
+          pulls a neighborhood up the list. Covers the full collected history.
+        sql: |-
+          WITH deltas AS (
+            SELECT station_id,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM observation
+          ),
+          per_station AS (
+            SELECT station_id, SUM(ABS(d)) AS turnover
+            FROM deltas
+            WHERE d IS NOT NULL
+            GROUP BY station_id
+          )
+          SELECT s.neighborhood                          AS "Neighborhood",
+                 COUNT(DISTINCT s.station_id)            AS "Stations",
+                 SUM(s.capacity)                         AS "Total docks",
+                 COALESCE(SUM(ps.turnover), 0)           AS "Bike turnover",
+                 ROUND(COALESCE(SUM(ps.turnover), 0) * 1.0
+                       / COUNT(DISTINCT s.station_id), 1) AS "Turnover per station",
+                 ROUND(COALESCE(SUM(ps.turnover), 0) * 1.0
+                       / NULLIF(SUM(s.capacity), 0), 1)   AS "Turnover per dock"
+          FROM station s
+          LEFT JOIN per_station ps USING (station_id)
+          WHERE s.neighborhood IS NOT NULL
+          GROUP BY s.neighborhood
+          ORDER BY "Turnover per dock" ASC;
+
+      neighborhood_turnover_by_day:
+        title: 📉 Neighborhood turnover per station, by day
+        description_html: |
+          The <a href="/stations/overserved_neighborhoods">over-served</a> view
+          over time: one row per neighborhood per day, with bike turnover divided
+          by the neighborhood's station count (a fixed denominator, so a quiet
+          neighborhood stays low even on busy days). Switch to the chart tab and
+          facet by neighborhood to watch trends. Days are Eastern (UTC−4);
+          the first day is partial.
+        sql: |-
+          WITH counts AS (
+            SELECT neighborhood, COUNT(*) AS stations
+            FROM station
+            WHERE neighborhood IS NOT NULL
+            GROUP BY neighborhood
+          ),
+          deltas AS (
+            SELECT station_id, ts,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM observation
+          )
+          SELECT date(o.ts, 'unixepoch', '-4 hours') AS "Day",
+                 s.neighborhood                      AS "Neighborhood",
+                 c.stations                          AS "Stations",
+                 SUM(ABS(o.d))                       AS "Bike turnover",
+                 ROUND(SUM(ABS(o.d)) * 1.0 / c.stations, 1) AS "Turnover per station"
+          FROM deltas o
+          JOIN station s USING (station_id)
+          JOIN counts c ON c.neighborhood = s.neighborhood
+          WHERE o.d IS NOT NULL AND s.neighborhood IS NOT NULL
+          GROUP BY "Day", s.neighborhood
+          ORDER BY "Day" ASC, "Turnover per station" ASC;
+
+      heatmap_data:
+        title: 🌡️ Heat map data (turnover within a window)
+        description_html: |
+          Backing data for the <a href="/heatmap">heat map</a>. One row per station:
+          location + total bike turnover over the last <code>:hours</code> hours,
+          anchored to the latest observation.
+        sql: |-
+          WITH recent AS (
+            SELECT station_id, ts, bikes
+            FROM observation
+            WHERE ts >= (SELECT MAX(ts) FROM observation) - CAST(:hours AS INTEGER) * 3600
+          ),
+          deltas AS (
+            SELECT station_id,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM recent
+          )
+          SELECT s.name AS name, s.lat AS lat, s.lon AS lon,
+                 SUM(ABS(d)) AS weight
+          FROM deltas
+          JOIN station s USING (station_id)
+          WHERE d IS NOT NULL
+          GROUP BY deltas.station_id
+          HAVING weight > 0
+          ORDER BY weight DESC;
+
+      heatmap_data_range:
+        title: 🌡️ Heat map data (turnover in a time range)
+        description_html: |
+          Backing data for the <a href="/heatmap">heat map</a>, for an explicit
+          time range rather than a rolling window. One row per station: location
+          + total bike turnover over observations with
+          <code>:start</code> ≤ ts ≤ <code>:end</code> (Unix epoch seconds, UTC).
+        sql: |-
+          WITH recent AS (
+            SELECT station_id, ts, bikes
+            FROM observation
+            WHERE ts >= CAST(:start AS INTEGER)
+              AND ts <= CAST(:end AS INTEGER)
+          ),
+          deltas AS (
+            SELECT station_id,
+                   bikes - LAG(bikes) OVER (
+                     PARTITION BY station_id ORDER BY ts
+                   ) AS d
+            FROM recent
+          )
+          SELECT s.name AS name, s.lat AS lat, s.lon AS lon,
+                 SUM(ABS(d)) AS weight
+          FROM deltas
+          JOIN station s USING (station_id)
+          WHERE d IS NOT NULL
+          GROUP BY deltas.station_id
+          HAVING weight > 0
+          ORDER BY weight DESC;
+
+      suggested_heatmap_data:
+        title: 📍 Suggestion heat map data
+        description_html: |
+          Backing data for the <a href="/suggested-heatmap">suggestion heat map</a>.
+          One row per distinct suggested location: lat/lon + how many citizens
+          dropped a pin there (<code>weight</code>). The map turns this into a
+          density surface, so clusters of requests glow hottest.
+        sql: |-
+          SELECT category   AS name,
+                 lat        AS lat,
+                 lon        AS lon,
+                 COUNT(*)   AS weight
+          FROM suggested_station
+          WHERE lat IS NOT NULL AND lon IS NOT NULL
+          GROUP BY lat, lon
+          ORDER BY weight DESC;
+
+      suggested_by_neighborhood:
+        title: 📍 Demand for new stations by neighborhood
+        description_html: |
+          Where citizens most want new àVélo stations. Counts the
+          <a href="/stations/suggested_station">Voie libre</a> suggestion pins in
+          each Québec City neighborhood, alongside how many real stations that
+          neighborhood already has — so a high suggestion count next to few
+          existing stations flags an under-served area. These are
+          <em>requests</em> from RTC's public consultation, not real stations.
+        sql: |-
+          SELECT ss.neighborhood                AS "Neighborhood",
+                 COUNT(*)                        AS "Suggested stations",
+                 (SELECT COUNT(*) FROM station s
+                  WHERE s.neighborhood = ss.neighborhood) AS "Existing stations"
+          FROM suggested_station ss
+          WHERE ss.neighborhood IS NOT NULL
+          GROUP BY ss.neighborhood
+          ORDER BY "Suggested stations" DESC, "Existing stations" ASC;
+
+      access_gaps_by_neighborhood:
+        title: 🚶 Access gaps by neighborhood (demand far from stations)
+        description_html: |
+          Where people are asking for stations far from any that exist today —
+          an access gap, not just popularity. For each neighborhood: total
+          suggestions, how many sit more than <code>:min_m</code> metres
+          (straight-line) from the nearest existing station, and the average and
+          worst walk. A neighborhood can look "quiet" on turnover yet score high
+          here if its stations are clustered away from where people asked for
+          them. Blank <code>:min_m</code> defaults to 500 m.
+        sql: |-
+          SELECT neighborhood AS "Neighborhood",
+                 COUNT(*)      AS "Suggestions",
+                 SUM(CASE WHEN nearest_station_m
+                            > COALESCE(NULLIF(CAST(:min_m AS INTEGER), 0), 500)
+                          THEN 1 ELSE 0 END) AS "Far from a station",
+                 ROUND(AVG(nearest_station_m)) AS "Avg walk (m)",
+                 MAX(nearest_station_m)        AS "Worst walk (m)"
+          FROM suggested_station
+          WHERE neighborhood IS NOT NULL
+          GROUP BY neighborhood
+          ORDER BY "Far from a station" DESC, "Avg walk (m)" DESC;
+
+      access_gap_suggestions:
+        title: 🚶 Suggestions far from any station (map)
+        description_html: |
+          Individual citizen suggestions sitting more than <code>:min_m</code>
+          metres (straight-line) from the nearest existing station — blank
+          defaults to 500 m. A map appears above: clusters of dots are places
+          people asked for àVélo that the current network doesn't reach. Pins
+          outside the city's neighborhoods (far-rural drops) are excluded.
+        sql: |-
+          SELECT neighborhood      AS "Neighborhood",
+                 nearest_station_m  AS "Metres to nearest",
+                 nearest_station    AS "Nearest station",
+                 lat, lon
+          FROM suggested_station
+          WHERE neighborhood IS NOT NULL
+            AND nearest_station_m
+                > COALESCE(NULLIF(CAST(:min_m AS INTEGER), 0), 500)
+          ORDER BY nearest_station_m DESC;
 
       activity_by_hour:
         title: ⏰ Activity by hour of day (Eastern)
