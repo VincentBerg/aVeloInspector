@@ -3707,3 +3707,17 @@
 {"ts": 1787639582, "station_id": "85", "bikes": 6, "docks": 17, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
 {"ts": 1787639582, "station_id": "110", "bikes": 9, "docks": 14, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
 {"ts": 1787639582, "station_id": "123", "bikes": 9, "docks": 7, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1787639659, "station_id": "24", "bikes": 21, "docks": 0, "status": "IN_SERVICE", "ebikes": 21, "mechanical": 0}
+{"ts": 1787639659, "station_id": "36", "bikes": 17, "docks": 4, "status": "IN_SERVICE", "ebikes": 17, "mechanical": 0}
+{"ts": 1787639659, "station_id": "72", "bikes": 0, "docks": 19, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1787639659, "station_id": "214", "bikes": 14, "docks": 6, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1787639734, "station_id": "50", "bikes": 24, "docks": 3, "status": "IN_SERVICE", "ebikes": 24, "mechanical": 0}
+{"ts": 1787639734, "station_id": "95", "bikes": 13, "docks": 3, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1787639734, "station_id": "168", "bikes": 7, "docks": 13, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1787639815, "station_id": "21", "bikes": 21, "docks": 6, "status": "IN_SERVICE", "ebikes": 21, "mechanical": 0}
+{"ts": 1787639815, "station_id": "24", "bikes": 22, "docks": 0, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
+{"ts": 1787639815, "station_id": "74", "bikes": 4, "docks": 10, "status": "IN_SERVICE", "ebikes": 4, "mechanical": 0}
+{"ts": 1787639891, "station_id": "5", "bikes": 0, "docks": 23, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1787639891, "station_id": "168", "bikes": 6, "docks": 13, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
+{"ts": 1787639891, "station_id": "175", "bikes": 11, "docks": 7, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
+{"ts": 1787639891, "station_id": "221", "bikes": 8, "docks": 7, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
