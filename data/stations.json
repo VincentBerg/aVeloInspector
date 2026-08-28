@@ -457,7 +457,7 @@
  },
  "154": {
   "address": "Cégep Limoilou - Campus Charlesbourg",
-  "capacity": 8,
+  "capacity": 24,
   "lat": 46.861313941030495,
   "lon": -71.26131808333729,
   "name": "Cégep Limoilou - Charlesbourg",
@@ -1478,14 +1478,6 @@
   "lon": -71.22489827203177,
   "name": "Place Jacques-Cartier",
   "station_id": "6"
- },
- "60": {
-  "address": "ULaval - Charles-De Koninck",
-  "capacity": 24,
-  "lat": 46.78170373592318,
-  "lon": -71.27422868526473,
-  "name": "ULaval - Charles-De Koninck",
-  "station_id": "60"
  },
  "61": {
   "address": "ULaval - Alphonse-Desjardins",
