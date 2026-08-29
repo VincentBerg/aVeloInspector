@@ -1479,6 +1479,14 @@
   "name": "Place Jacques-Cartier",
   "station_id": "6"
  },
+ "60": {
+  "address": "ULaval - Charles-De Koninck",
+  "capacity": 24,
+  "lat": 46.78022821495349,
+  "lon": -71.27254068128813,
+  "name": "ULaval - Charles-De Koninck",
+  "station_id": "60"
+ },
  "61": {
   "address": "ULaval - Alphonse-Desjardins",
   "capacity": 24,
