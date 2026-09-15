@@ -812,16 +812,16 @@
   "status": "IN_SERVICE"
  },
  "207": {
-  "bikes": 3,
-  "docks": 17,
-  "ebikes": 3,
+  "bikes": 2,
+  "docks": 18,
+  "ebikes": 2,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "208": {
-  "bikes": 7,
-  "docks": 11,
-  "ebikes": 7,
+  "bikes": 8,
+  "docks": 10,
+  "ebikes": 8,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
