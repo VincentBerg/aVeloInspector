@@ -1647,6 +1647,14 @@
   "name": "Domaine de Maizerets",
   "station_id": "79"
  },
+ "8": {
+  "address": "800 Rue D'Youville",
+  "capacity": 32,
+  "lat": 46.81230646289787,
+  "lon": -71.21437238651318,
+  "name": "Place D’Youville",
+  "station_id": "8"
+ },
  "80": {
   "address": "Transfert",
   "capacity": 16,
