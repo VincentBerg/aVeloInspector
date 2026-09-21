@@ -2994,3 +2994,17 @@
 {"ts": 1789981291, "station_id": "9", "bikes": 23, "docks": 4, "status": "IN_SERVICE", "ebikes": 23, "mechanical": 0}
 {"ts": 1789981291, "station_id": "85", "bikes": 3, "docks": 20, "status": "IN_SERVICE", "ebikes": 3, "mechanical": 0}
 {"ts": 1789981367, "station_id": "85", "bikes": 2, "docks": 20, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1789981444, "station_id": "9", "bikes": 24, "docks": 4, "status": "IN_SERVICE", "ebikes": 24, "mechanical": 0}
+{"ts": 1789981444, "station_id": "58", "bikes": 13, "docks": 9, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1789981444, "station_id": "85", "bikes": 3, "docks": 20, "status": "IN_SERVICE", "ebikes": 3, "mechanical": 0}
+{"ts": 1789981444, "station_id": "185", "bikes": 12, "docks": 11, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1789981519, "station_id": "77", "bikes": 19, "docks": 4, "status": "IN_SERVICE", "ebikes": 19, "mechanical": 0}
+{"ts": 1789981519, "station_id": "85", "bikes": 2, "docks": 20, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1789981519, "station_id": "185", "bikes": 13, "docks": 11, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1789981595, "station_id": "9", "bikes": 23, "docks": 4, "status": "IN_SERVICE", "ebikes": 23, "mechanical": 0}
+{"ts": 1789981595, "station_id": "58", "bikes": 12, "docks": 9, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1789981595, "station_id": "214", "bikes": 10, "docks": 8, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1789981671, "station_id": "14", "bikes": 4, "docks": 10, "status": "IN_SERVICE", "ebikes": 4, "mechanical": 0}
+{"ts": 1789981671, "station_id": "30", "bikes": 10, "docks": 13, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1789981671, "station_id": "58", "bikes": 13, "docks": 9, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1789981671, "station_id": "179", "bikes": 6, "docks": 9, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
