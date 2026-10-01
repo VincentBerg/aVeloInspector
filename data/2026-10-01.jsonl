@@ -2740,3 +2740,6 @@
 {"ts": 1790829245, "station_id": "69", "bikes": 26, "docks": 0, "status": "IN_SERVICE", "ebikes": 26, "mechanical": 0}
 {"ts": 1790829245, "station_id": "204", "bikes": 9, "docks": 6, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
 {"ts": 1790829321, "station_id": "133", "bikes": 30, "docks": 21, "status": "IN_SERVICE", "ebikes": 30, "mechanical": 0}
+{"ts": 1790829398, "station_id": "34", "bikes": 13, "docks": 7, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1790829473, "station_id": "60", "bikes": 0, "docks": 18, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1790829473, "station_id": "162", "bikes": 2, "docks": 14, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
