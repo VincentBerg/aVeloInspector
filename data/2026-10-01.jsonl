@@ -3103,3 +3103,17 @@
 {"ts": 1790834431, "station_id": "112", "bikes": 7, "docks": 13, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
 {"ts": 1790834582, "station_id": "112", "bikes": 6, "docks": 14, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
 {"ts": 1790834582, "station_id": "170", "bikes": 1, "docks": 17, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1790834658, "station_id": "112", "bikes": 7, "docks": 13, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1790834658, "station_id": "170", "bikes": 0, "docks": 17, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1790834734, "station_id": "19", "bikes": 8, "docks": 7, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1790834734, "station_id": "112", "bikes": 6, "docks": 14, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
+{"ts": 1790834734, "station_id": "151", "bikes": 14, "docks": 1, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1790834734, "station_id": "233", "bikes": 2, "docks": 13, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1790834809, "station_id": "27", "bikes": 2, "docks": 30, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1790834809, "station_id": "34", "bikes": 12, "docks": 8, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1790834809, "station_id": "44", "bikes": 1, "docks": 22, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1790834809, "station_id": "151", "bikes": 13, "docks": 1, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1790834884, "station_id": "27", "bikes": 1, "docks": 30, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1790834884, "station_id": "42", "bikes": 8, "docks": 8, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1790834884, "station_id": "44", "bikes": 0, "docks": 23, "status": "IN_SERVICE", "ebikes": 0, "mechanical": 0}
+{"ts": 1790834884, "station_id": "170", "bikes": 1, "docks": 17, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
