@@ -679,6 +679,14 @@
   "name": "De Liège / Neilson",
   "station_id": "179"
  },
+ "18": {
+  "address": "Patro Laval",
+  "capacity": 20,
+  "lat": 46.81231722364255,
+  "lon": -71.24216566311739,
+  "name": "Patro Laval",
+  "station_id": "18"
+ },
  "180": {
   "address": "",
   "capacity": 16,
