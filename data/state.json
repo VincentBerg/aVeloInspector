@@ -875,9 +875,9 @@
   "status": "IN_SERVICE"
  },
  "215": {
-  "bikes": 14,
-  "docks": 8,
-  "ebikes": 14,
+  "bikes": 13,
+  "docks": 9,
+  "ebikes": 13,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -938,9 +938,9 @@
   "status": "IN_SERVICE"
  },
  "223": {
-  "bikes": 10,
-  "docks": 5,
-  "ebikes": 10,
+  "bikes": 11,
+  "docks": 4,
+  "ebikes": 11,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -1106,16 +1106,16 @@
   "status": "IN_SERVICE"
  },
  "33": {
-  "bikes": 1,
-  "docks": 23,
-  "ebikes": 1,
+  "bikes": 0,
+  "docks": 24,
+  "ebikes": 0,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "34": {
-  "bikes": 2,
-  "docks": 17,
-  "ebikes": 2,
+  "bikes": 1,
+  "docks": 18,
+  "ebikes": 1,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -1505,9 +1505,9 @@
   "status": "IN_SERVICE"
  },
  "9": {
-  "bikes": 4,
-  "docks": 22,
-  "ebikes": 4,
+  "bikes": 3,
+  "docks": 23,
+  "ebikes": 3,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
