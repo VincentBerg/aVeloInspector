@@ -175,14 +175,6 @@
   "name": "Racine / Wilfrid-Caron",
   "station_id": "119"
  },
- "120": {
-  "address": "Des Dames-Ursulines / Racine",
-  "capacity": 12,
-  "lat": 46.85425482308304,
-  "lon": -71.35533007311247,
-  "name": "Des Dames-Ursulines / Racine",
-  "station_id": "120"
- },
  "121": {
   "address": "Des Saules / 1re avenue",
   "capacity": 16,
