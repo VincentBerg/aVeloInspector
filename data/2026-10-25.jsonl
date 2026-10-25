@@ -3332,3 +3332,17 @@
 {"ts": 1792926359, "station_id": "43", "bikes": 4, "docks": 12, "status": "IN_SERVICE", "ebikes": 4, "mechanical": 0}
 {"ts": 1792926359, "station_id": "89", "bikes": 10, "docks": 9, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
 {"ts": 1792926359, "station_id": "171", "bikes": 7, "docks": 9, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1792926436, "station_id": "25", "bikes": 7, "docks": 11, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1792926436, "station_id": "31", "bikes": 5, "docks": 15, "status": "IN_SERVICE", "ebikes": 5, "mechanical": 0}
+{"ts": 1792926436, "station_id": "89", "bikes": 9, "docks": 9, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1792926436, "station_id": "142", "bikes": 7, "docks": 8, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1792926436, "station_id": "188", "bikes": 12, "docks": 8, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1792926512, "station_id": "6", "bikes": 12, "docks": 19, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1792926512, "station_id": "74", "bikes": 2, "docks": 13, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1792926512, "station_id": "133", "bikes": 30, "docks": 24, "status": "IN_SERVICE", "ebikes": 30, "mechanical": 0}
+{"ts": 1792926512, "station_id": "149", "bikes": 9, "docks": 11, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
+{"ts": 1792926588, "station_id": "6", "bikes": 13, "docks": 19, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1792926588, "station_id": "75", "bikes": 16, "docks": 3, "status": "IN_SERVICE", "ebikes": 16, "mechanical": 0}
+{"ts": 1792926588, "station_id": "98", "bikes": 14, "docks": 6, "status": "IN_SERVICE", "ebikes": 14, "mechanical": 0}
+{"ts": 1792926588, "station_id": "133", "bikes": 29, "docks": 24, "status": "IN_SERVICE", "ebikes": 29, "mechanical": 0}
+{"ts": 1792926664, "station_id": "36", "bikes": 13, "docks": 11, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
