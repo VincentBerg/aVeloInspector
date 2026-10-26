@@ -1345,7 +1345,7 @@
  },
  "42": {
   "address": "Grand Marché",
-  "capacity": 0,
+  "capacity": 16,
   "lat": 46.8294326924675,
   "lon": -71.24406570853023,
   "name": "ExpoCité - Grand Marché",
