@@ -1777,3 +1777,10 @@
 {"ts": 1792998597, "station_id": "29", "bikes": 8, "docks": 21, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
 {"ts": 1792998597, "station_id": "133", "bikes": 23, "docks": 29, "status": "IN_SERVICE", "ebikes": 23, "mechanical": 0}
 {"ts": 1792998673, "station_id": "24", "bikes": 22, "docks": 0, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
+{"ts": 1792998750, "station_id": "5", "bikes": 1, "docks": 22, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1792998750, "station_id": "24", "bikes": 23, "docks": 0, "status": "IN_SERVICE", "ebikes": 23, "mechanical": 0}
+{"ts": 1792998826, "station_id": "5", "bikes": 2, "docks": 21, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1792998826, "station_id": "133", "bikes": 22, "docks": 29, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
+{"ts": 1792998902, "station_id": "5", "bikes": 1, "docks": 21, "status": "IN_SERVICE", "ebikes": 1, "mechanical": 0}
+{"ts": 1792998978, "station_id": "6", "bikes": 10, "docks": 23, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
+{"ts": 1792998978, "station_id": "24", "bikes": 22, "docks": 0, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
