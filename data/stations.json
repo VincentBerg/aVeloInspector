@@ -329,7 +329,7 @@
  },
  "14": {
   "address": "Eymard / Sainte-Foy",
-  "capacity": 16,
+  "capacity": 0,
   "lat": 46.793318961169156,
   "lon": -71.25832027273796,
   "name": "Eymard / Sainte-Foy",
@@ -1313,7 +1313,7 @@
  },
  "39": {
   "address": "13e Rue / 1ère Avenue",
-  "capacity": 0,
+  "capacity": 20,
   "lat": 46.827114873941426,
   "lon": -71.23470697516585,
   "name": "13e Rue / 1re Avenue",
