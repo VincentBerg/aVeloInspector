@@ -1657,7 +1657,7 @@
  },
  "80": {
   "address": "Transfert",
-  "capacity": 16,
+  "capacity": 15,
   "lat": 46.778833676396516,
   "lon": -71.25806780981443,
   "name": "Parc du Buisson",
