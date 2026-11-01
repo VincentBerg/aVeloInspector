@@ -479,14 +479,6 @@
   "name": "CLSC Orléans - Maizerets",
   "station_id": "156"
  },
- "157": {
-  "address": "Parc des Gazouillis",
-  "capacity": 24,
-  "lat": 46.8451316637542,
-  "lon": -71.21345542430674,
-  "name": "Sainte-Anne / D'Estimauville",
-  "station_id": "157"
- },
  "158": {
   "address": "IUSMQ",
   "capacity": 24,
@@ -494,14 +486,6 @@
   "lon": -71.2169189947286,
   "name": "IUSMQ",
   "station_id": "158"
- },
- "159": {
-  "address": "Parc Lortie",
-  "capacity": 20,
-  "lat": 46.849500328585,
-  "lon": -71.21047389308835,
-  "name": "Parc Lortie",
-  "station_id": "159"
  },
  "16": {
   "address": "YWCA Québec",
@@ -647,14 +631,6 @@
   "name": "Parc Évangéline",
   "station_id": "175"
  },
- "176": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.852400648827846,
-  "lon": -71.20962011936149,
-  "name": "Parc Saint-Ignace",
-  "station_id": "176"
- },
  "177": {
   "address": "",
   "capacity": 16,
@@ -702,46 +678,6 @@
   "lon": -71.34979102137527,
   "name": "Provancher / De la Chaudière",
   "station_id": "181"
- },
- "182": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.888423902711175,
-  "lon": -71.1624372373101,
-  "name": "Mercier / Larue",
-  "station_id": "182"
- },
- "183": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.884787003083666,
-  "lon": -71.15895983847007,
-  "name": "Église Saint-Louis-de-Courville",
-  "station_id": "183"
- },
- "184": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.874196991967665,
-  "lon": -71.15718695643386,
-  "name": "Sainte-Anne / 112e Rue",
-  "station_id": "184"
- },
- "185": {
-  "address": "",
-  "capacity": 24,
-  "lat": 46.88496902103928,
-  "lon": -71.14433112862548,
-  "name": "Parc de la Chute-Montmorency",
-  "station_id": "185"
- },
- "186": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.892089661678774,
-  "lon": -71.15012479134478,
-  "name": "Terminus Chute-Montmorency",
-  "station_id": "186"
  },
  "187": {
   "address": "",
@@ -1150,14 +1086,6 @@
   "lon": -71.30068269450175,
   "name": "Lebourgneuf / Des Galeries - Ouest",
   "station_id": "231"
- },
- "232": {
-  "address": "Des Martyrs / Monseigneur-Gauthier",
-  "capacity": 16,
-  "lat": 46.85208880977108,
-  "lon": -71.20505019155003,
-  "name": "Des Martyrs / Monseigneur-Gauthier",
-  "station_id": "232"
  },
  "233": {
   "address": "Louis-Fréchette / De Callières",
