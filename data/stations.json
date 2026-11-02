@@ -1001,7 +1001,7 @@
  },
  "222": {
   "address": "5e Rue / 3e Avenue",
-  "capacity": 20,
+  "capacity": 0,
   "lat": 46.823385467279316,
   "lon": -71.2266414848932,
   "name": "5e Rue / 3e Avenue",
