@@ -159,30 +159,6 @@
   "name": "Station de la Plage",
   "station_id": "117"
  },
- "118": {
-  "address": "Hôpital Chauveau",
-  "capacity": 12,
-  "lat": 46.85264917020762,
-  "lon": -71.36859157646136,
-  "name": "Hôpital Chauveau",
-  "station_id": "118"
- },
- "119": {
-  "address": "Racine / Wilfrid-Caron",
-  "capacity": 12,
-  "lat": 46.85082165727602,
-  "lon": -71.36069354338989,
-  "name": "Racine / Wilfrid-Caron",
-  "station_id": "119"
- },
- "120": {
-  "address": "Des Dames-Ursulines / Racine",
-  "capacity": 12,
-  "lat": 46.85425482308304,
-  "lon": -71.35533007311247,
-  "name": "Des Dames-Ursulines / Racine",
-  "station_id": "120"
- },
  "121": {
   "address": "Des Saules / 1re avenue",
   "capacity": 16,
@@ -190,14 +166,6 @@
   "lon": -71.24584830886256,
   "name": "Des Saules E. / 1re Avenue",
   "station_id": "121"
- },
- "123": {
-  "address": "Station test 2",
-  "capacity": 16,
-  "lat": 46.846213166648546,
-  "lon": -71.25512111309013,
-  "name": "2e Avenue O. / 50e Rue O.",
-  "station_id": "123"
  },
  "124": {
   "address": "Transfert2",
@@ -286,14 +254,6 @@
   "lon": -71.26492995145759,
   "name": "Chabot / Ducharme",
   "station_id": "134"
- },
- "135": {
-  "address": "Parc Maurice-Lortie",
-  "capacity": 16,
-  "lat": 46.846910738643864,
-  "lon": -71.24910760047874,
-  "name": "Parc Maurice-Lortie",
-  "station_id": "135"
  },
  "136": {
   "address": "D'Assise / Ozanam",
@@ -431,62 +391,6 @@
   "name": "France-Prime / Duchesneau",
   "station_id": "150"
  },
- "151": {
-  "address": "Henri-Bourassa / Des Cheminots",
-  "capacity": 16,
-  "lat": 46.85060963180673,
-  "lon": -71.25009479839262,
-  "name": "Henri-Bourassa / Des Cheminots",
-  "station_id": "151"
- },
- "152": {
-  "address": "64e Rue / 4e Avenue",
-  "capacity": 16,
-  "lat": 46.855366006787385,
-  "lon": -71.25410363541862,
-  "name": "Parc Saint-Jérôme",
-  "station_id": "152"
- },
- "153": {
-  "address": "70e Rue / Henri-Bourassa",
-  "capacity": 16,
-  "lat": 46.8574825919111,
-  "lon": -71.26094921763587,
-  "name": "70e Rue E. / Henri-Bourassa",
-  "station_id": "153"
- },
- "154": {
-  "address": "Cégep Limoilou - Campus Charlesbourg",
-  "capacity": 24,
-  "lat": 46.861313941030495,
-  "lon": -71.26131808333729,
-  "name": "Cégep Limoilou - Charlesbourg",
-  "station_id": "154"
- },
- "155": {
-  "address": "Courtemanche / Montmorency",
-  "capacity": 20,
-  "lat": 46.8415841695163,
-  "lon": -71.21411443783569,
-  "name": "De Courtemanche / Montmorency",
-  "station_id": "155"
- },
- "156": {
-  "address": "CLSC Maizerets",
-  "capacity": 20,
-  "lat": 46.84347309481588,
-  "lon": -71.219111984319,
-  "name": "CLSC Orléans - Maizerets",
-  "station_id": "156"
- },
- "158": {
-  "address": "IUSMQ",
-  "capacity": 24,
-  "lat": 46.846402004432434,
-  "lon": -71.2169189947286,
-  "name": "IUSMQ",
-  "station_id": "158"
- },
  "16": {
   "address": "YWCA Québec",
   "capacity": 16,
@@ -599,46 +503,6 @@
   "name": "Félix-Gabriel-Marchand / Saint-Olivier",
   "station_id": "171"
  },
- "172": {
-  "address": "Racine / De l'Ormière",
-  "capacity": 12,
-  "lat": 46.84475647631118,
-  "lon": -71.36730109599648,
-  "name": "Racine / De l'Ormière",
-  "station_id": "172"
- },
- "173": {
-  "address": "Bibliothèque Neufchâtel",
-  "capacity": 12,
-  "lat": 46.83526288313119,
-  "lon": -71.35723627939535,
-  "name": "Bibliothèque Neufchâtel",
-  "station_id": "173"
- },
- "174": {
-  "address": "Chauveau / De l'Ormière",
-  "capacity": 12,
-  "lat": 46.832685480953096,
-  "lon": -71.34905000475464,
-  "name": "Chauveau / De l'Ormière",
-  "station_id": "174"
- },
- "175": {
-  "address": "2601 Rue De La Sagouine",
-  "capacity": 20,
-  "lat": 46.848702,
-  "lon": -71.22727,
-  "name": "Parc Évangéline",
-  "station_id": "175"
- },
- "177": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.84777487449442,
-  "lon": -71.23219423860073,
-  "name": "Bardy / Désilets",
-  "station_id": "177"
- },
  "178": {
   "address": "",
   "capacity": 16,
@@ -719,14 +583,6 @@
   "name": "Dalhousie / Quai Saint-André",
   "station_id": "190"
  },
- "191": {
-  "address": "216 Rue Georges-Cloutier",
-  "capacity": 12,
-  "lat": 46.857427,
-  "lon": -71.356383,
-  "name": "Georges-Cloutier / Des Cheminots",
-  "station_id": "191"
- },
  "192": {
   "address": "",
   "capacity": 20,
@@ -734,14 +590,6 @@
   "lon": -71.22423413517913,
   "name": "De la Capricieuse / De la Canardière",
   "station_id": "192"
- },
- "193": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.83769169580933,
-  "lon": -71.23035859838943,
-  "name": "Du Mont-Thabor / 22e Rue",
-  "station_id": "193"
  },
  "194": {
   "address": "",
@@ -831,30 +679,6 @@
   "name": "Place Ste-Foy - Robert-Bourassa",
   "station_id": "202"
  },
- "203": {
-  "address": "73 Rue O. / 3e Avenue O.",
-  "capacity": 16,
-  "lat": 46.85631400546047,
-  "lon": -71.2666800928398,
-  "name": "73 Rue O. / 3e Avenue O.",
-  "station_id": "203"
- },
- "204": {
-  "address": "Parc Maria-Goretti",
-  "capacity": 16,
-  "lat": 46.856273653577965,
-  "lon": -71.27167973044357,
-  "name": "Parc Maria-Goretti",
-  "station_id": "204"
- },
- "205": {
-  "address": "De Nîmes / De la Sorbonne",
-  "capacity": 20,
-  "lat": 46.864437675551414,
-  "lon": -71.25449425245651,
-  "name": "De Nîmes / De la Sorbonne",
-  "station_id": "205"
- },
  "206": {
   "address": "Saint-Jean / Des Zouaves",
   "capacity": 20,
@@ -878,14 +702,6 @@
   "lon": -71.22346526143316,
   "name": "Pont Dorchester",
   "station_id": "208"
- },
- "209": {
-  "address": "57e Rue O. / De l'Atrium",
-  "capacity": 16,
-  "lat": 46.84634580523921,
-  "lon": -71.2670550077941,
-  "name": "57e Rue O. / De l'Atrium",
-  "station_id": "209"
  },
  "21": {
   "address": "Père-Marquette / Belvédère",
@@ -1031,38 +847,6 @@
   "name": "16e Rue / 4e Avenue",
   "station_id": "225"
  },
- "226": {
-  "address": "Des Gerbes / Lebourgneuf",
-  "capacity": 20,
-  "lat": 46.84251383276323,
-  "lon": -71.28036768032844,
-  "name": "Des Gerbes / Lebourgneuf",
-  "station_id": "226"
- },
- "227": {
-  "address": "Lebourgneuf / De la Griotte",
-  "capacity": 16,
-  "lat": 46.84080110871866,
-  "lon": -71.28258163263763,
-  "name": "Lebourgneuf / De la Griotte",
-  "station_id": "227"
- },
- "228": {
-  "address": "Le Mesnil / Lebourgneuf",
-  "capacity": 16,
-  "lat": 46.836748271291825,
-  "lon": -71.29237803399575,
-  "name": "Le Mesnil / Lebourgneuf",
-  "station_id": "228"
- },
- "229": {
-  "address": "Lebourgneuf / De l'Islet",
-  "capacity": 20,
-  "lat": 46.836178202132785,
-  "lon": -71.29470898525767,
-  "name": "Lebourgneuf / De l'Islet",
-  "station_id": "229"
- },
  "23": {
   "address": "Père-Marquette / Des Érables",
   "capacity": 24,
@@ -1071,22 +855,6 @@
   "name": "Père-Marquette / De Manrèse",
   "station_id": "23"
  },
- "230": {
-  "address": "Lebourgneuf / Des Galeries - Est",
-  "capacity": 16,
-  "lat": 46.83516362907513,
-  "lon": -71.29860508563957,
-  "name": "Lebourgneuf / Des Galeries - Est",
-  "station_id": "230"
- },
- "231": {
-  "address": "Lebourgneuf / Des Galeries - Ouest",
-  "capacity": 16,
-  "lat": 46.83425210279602,
-  "lon": -71.30068269450175,
-  "name": "Lebourgneuf / Des Galeries - Ouest",
-  "station_id": "231"
- },
  "233": {
   "address": "Louis-Fréchette / De Callières",
   "capacity": 16,
@@ -1094,14 +862,6 @@
   "lon": -71.24714963104748,
   "name": "Louis-Fréchette / De Callières",
   "station_id": "233"
- },
- "234": {
-  "address": "Thomas-Baillairgé / 76e Rue E.",
-  "capacity": 16,
-  "lat": 46.85879886062211,
-  "lon": -71.26672184955702,
-  "name": "Thomas-Baillairgé / 76e Rue E.",
-  "station_id": "234"
  },
  "235": {
   "address": "Brown / Grande Allée O.",
@@ -1542,14 +1302,6 @@
   "lon": -71.232018,
   "name": "Perrault / 24e Rue",
   "station_id": "75"
- },
- "76": {
-  "address": "Hôpital de l'Enfant-Jésus",
-  "capacity": 16,
-  "lat": 46.83822969588059,
-  "lon": -71.22451224173356,
-  "name": "De Fondville / De La Ronde",
-  "station_id": "76"
  },
  "77": {
   "address": "Parc Bardy",
