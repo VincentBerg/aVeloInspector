@@ -25,7 +25,7 @@
  },
  "102": {
   "address": "1re Rue / 6e Avenue",
-  "capacity": 20,
+  "capacity": 0,
   "lat": 46.82214759734603,
   "lon": -71.22080572536477,
   "name": "1re Rue / 6e Avenue",
@@ -865,7 +865,7 @@
  },
  "207": {
   "address": "Parc Victoria - Saint-Anselme",
-  "capacity": 24,
+  "capacity": 0,
   "lat": 46.815345180084435,
   "lon": -71.23185756629042,
   "name": "Parc Victoria - Saint-Anselme",
