@@ -63,14 +63,6 @@
   "name": "Parc Dollard-Des Ormeaux",
   "station_id": "106"
  },
- "107": {
-  "address": "Parc-O-Bus 41e Rue / 1re Avenue",
-  "capacity": 26,
-  "lat": 46.84156661401417,
-  "lon": -71.24678158244029,
-  "name": "Parc-O-Bus 41e Rue E. / 1re Avenue",
-  "station_id": "107"
- },
  "108": {
   "address": "Espace Quatre Cents",
   "capacity": 16,
@@ -143,22 +135,6 @@
   "name": "Laurier Québec",
   "station_id": "115"
  },
- "116": {
-  "address": "Station de la Voile",
-  "capacity": 24,
-  "lat": 46.78251805148338,
-  "lon": -71.23910799051288,
-  "name": "Station de la Voile",
-  "station_id": "116"
- },
- "117": {
-  "address": "Station de la Plage",
-  "capacity": 28,
-  "lat": 46.77591727092199,
-  "lon": -71.24286742054232,
-  "name": "Station de la Plage",
-  "station_id": "117"
- },
  "121": {
   "address": "Des Saules / 1re avenue",
   "capacity": 16,
@@ -166,14 +142,6 @@
   "lon": -71.24584830886256,
   "name": "Des Saules E. / 1re Avenue",
   "station_id": "121"
- },
- "124": {
-  "address": "Transfert2",
-  "capacity": 20,
-  "lat": 46.845038143242014,
-  "lon": -71.26179981353721,
-  "name": "Parc Henri-Casault",
-  "station_id": "124"
  },
  "125": {
   "address": "Transfert3",
@@ -191,22 +159,6 @@
   "name": "De La Forest / Lavigerie",
   "station_id": "126"
  },
- "128": {
-  "address": "Transfert6",
-  "capacity": 16,
-  "lat": 46.8382435557152,
-  "lon": -71.25171811710162,
-  "name": "Des Lilas O. / Du Colisée",
-  "station_id": "128"
- },
- "129": {
-  "address": "Sasseville / De l'Église",
-  "capacity": 16,
-  "lat": 46.84467107521715,
-  "lon": -71.2442839723176,
-  "name": "42e Rue E. / 4e Avenue E.",
-  "station_id": "129"
- },
  "13": {
   "address": "Cégep Garneau",
   "capacity": 18,
@@ -223,22 +175,6 @@
   "name": "Cathédrale Holy Trinity",
   "station_id": "130"
  },
- "131": {
-  "address": "Parc Gérard-Marchand ",
-  "capacity": 20,
-  "lat": 46.83755261329308,
-  "lon": -71.2411400986,
-  "name": "Parc Gérard-Marchand ",
-  "station_id": "131"
- },
- "132": {
-  "address": "Des Chênes / Du Curé-Couture",
-  "capacity": 20,
-  "lat": 46.8331341934601,
-  "lon": -71.25239196541747,
-  "name": "Des Chênes O. / Du Curé-Couture",
-  "station_id": "132"
- },
  "133": {
   "address": "Fleur-de-Lys / Wilfrid-hamel",
   "capacity": 54,
@@ -246,14 +182,6 @@
   "lon": -71.24956383148204,
   "name": "Fleur-de-Lys / Wilfrid-Hamel",
   "station_id": "133"
- },
- "134": {
-  "address": "Ducharme / Chabot",
-  "capacity": 16,
-  "lat": 46.812179369496235,
-  "lon": -71.26492995145759,
-  "name": "Chabot / Ducharme",
-  "station_id": "134"
  },
  "136": {
   "address": "D'Assise / Ozanam",
@@ -359,14 +287,6 @@
   "name": "Parc du Verdier",
   "station_id": "147"
  },
- "148": {
-  "address": "Nolin / Pruneau",
-  "capacity": 16,
-  "lat": 46.81437974875573,
-  "lon": -71.26996526578262,
-  "name": "Nolin / Pruneau",
-  "station_id": "148"
- },
  "149": {
   "address": "De Bourgogne / Du Viaduc",
   "capacity": 20,
@@ -398,14 +318,6 @@
   "lon": -71.25432294892155,
   "name": "Marie-Rollet / Marguerite-Bourgeoys",
   "station_id": "16"
- },
- "160": {
-  "address": "Champlain / Escalier du Cap-Blanc",
-  "capacity": 20,
-  "lat": 46.80127798069473,
-  "lon": -71.21166664483985,
-  "name": "Parc de Notre-Dame-de-la-Garde",
-  "station_id": "160"
  },
  "161": {
   "address": "",
@@ -583,14 +495,6 @@
   "name": "Dalhousie / Quai Saint-André",
   "station_id": "190"
  },
- "192": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.83339934559405,
-  "lon": -71.22423413517913,
-  "name": "De la Capricieuse / De la Canardière",
-  "station_id": "192"
- },
  "194": {
   "address": "",
   "capacity": 20,
@@ -711,22 +615,6 @@
   "name": "Père-Marquette / Des Braves",
   "station_id": "21"
  },
- "210": {
-  "address": "Cardinal-Villeneuve / 22e Rue",
-  "capacity": 16,
-  "lat": 46.83318821469907,
-  "lon": -71.23877625706535,
-  "name": "Cardinal-Villeneuve / 22e Rue",
-  "station_id": "210"
- },
- "211": {
-  "address": "47e Rue E. / 46e Rue E.",
-  "capacity": 16,
-  "lat": 46.84881005098598,
-  "lon": -71.24406965015531,
-  "name": "47e Rue E. / 46e Rue E.",
-  "station_id": "211"
- },
  "212": {
   "address": "De la Pente-Douce / Calixa-Lavallée",
   "capacity": 16,
@@ -775,22 +663,6 @@
   "name": "Charles / De Bergerville",
   "station_id": "217"
  },
- "218": {
-  "address": "Station de la Côte",
-  "capacity": 16,
-  "lat": 46.77152291511983,
-  "lon": -71.24815407517394,
-  "name": "Station de la Côte",
-  "station_id": "218"
- },
- "219": {
-  "address": "Wilfrid-Hamel / Pierre-Bertrand",
-  "capacity": 20,
-  "lat": 46.80939711938061,
-  "lon": -71.26000683007707,
-  "name": "Wilfrid-Hamel / Pierre-Bertrand",
-  "station_id": "219"
- },
  "22": {
   "address": "Murray / Sainte-Foy",
   "capacity": 16,
@@ -798,54 +670,6 @@
   "lon": -71.23913342582605,
   "name": "Parc des Braves",
   "station_id": "22"
- },
- "220": {
-  "address": "Pierre-Bertrand / Victor-Delamarre",
-  "capacity": 16,
-  "lat": 46.81760201284735,
-  "lon": -71.26643371603969,
-  "name": "Pierre-Bertrand / Victor-Delamarre",
-  "station_id": "220"
- },
- "221": {
-  "address": "Bourdages - Rivière Saint-Charles",
-  "capacity": 16,
-  "lat": 46.81602956469083,
-  "lon": -71.24758840107587,
-  "name": "Bourdages - Rivière Saint-Charles",
-  "station_id": "221"
- },
- "222": {
-  "address": "5e Rue / 3e Avenue",
-  "capacity": 20,
-  "lat": 46.823385467279316,
-  "lon": -71.2266414848932,
-  "name": "5e Rue / 3e Avenue",
-  "station_id": "222"
- },
- "223": {
-  "address": "De la Canardière / 4e Avenue",
-  "capacity": 16,
-  "lat": 46.826224387394305,
-  "lon": -71.22667830577053,
-  "name": "De la Canardière / 4e Avenue",
-  "station_id": "223"
- },
- "224": {
-  "address": "Parc Lairet",
-  "capacity": 16,
-  "lat": 46.82769554773672,
-  "lon": -71.24110909938875,
-  "name": "Parc Lairet",
-  "station_id": "224"
- },
- "225": {
-  "address": "16e Rue / 4e Avenue",
-  "capacity": 19,
-  "lat": 46.83135754360543,
-  "lon": -71.23115771853548,
-  "name": "16e Rue / 4e Avenue",
-  "station_id": "225"
  },
  "23": {
   "address": "Père-Marquette / Des Érables",
@@ -1038,14 +862,6 @@
   "lon": -71.24406570853023,
   "name": "ExpoCité - Grand Marché",
   "station_id": "42"
- },
- "43": {
-  "address": "ExpoCité",
-  "capacity": 16,
-  "lat": 46.826552659765404,
-  "lon": -71.24597805079398,
-  "name": "ExpoCité - Place Jean-Béliveau",
-  "station_id": "43"
  },
  "44": {
   "address": "Transfert",
@@ -1263,14 +1079,6 @@
   "name": "Bourdages / Monseigneur-Plessis",
   "station_id": "70"
  },
- "71": {
-  "address": "7e Rue / 6e Avenue",
-  "capacity": 20,
-  "lat": 46.82613489140135,
-  "lon": -71.22456701921843,
-  "name": "7e Rue / 6e Avenue",
-  "station_id": "71"
- },
  "72": {
   "address": "11e Rue / 3e Avenue",
   "capacity": 20,
@@ -1278,22 +1086,6 @@
   "lon": -71.23070659565352,
   "name": "11e Rue / 3e Avenue",
   "station_id": "72"
- },
- "73": {
-  "address": "Bourdon / 1ère Avenue",
-  "capacity": 20,
-  "lat": 46.830915391388416,
-  "lon": -71.24147030043028,
-  "name": "D'Assise / Boisclerc",
-  "station_id": "73"
- },
- "74": {
-  "address": "Patro Roc-Amadour",
-  "capacity": 16,
-  "lat": 46.833607,
-  "lon": -71.242095,
-  "name": "Patro Roc-Amadour",
-  "station_id": "74"
  },
  "75": {
   "address": "Perrault / 24e Rue",
@@ -1343,14 +1135,6 @@
   "name": "Samuel-King / Quatre-Bourgeois",
   "station_id": "81"
  },
- "83": {
-  "address": "Transfert4",
-  "capacity": 16,
-  "lat": 46.812828916463346,
-  "lon": -71.25841113256834,
-  "name": "Arthur-Gagné / Gauvin",
-  "station_id": "83"
- },
  "84": {
   "address": "Transfert5",
   "capacity": 16,
@@ -1366,14 +1150,6 @@
   "lon": -71.29445197510145,
   "name": "IUCPQ",
   "station_id": "85"
- },
- "86": {
-  "address": "Transfert7",
-  "capacity": 20,
-  "lat": 46.81494476999434,
-  "lon": -71.26287253830263,
-  "name": "Bernatchez / Beaucage",
-  "station_id": "86"
  },
  "88": {
   "address": "Transfert 9",
@@ -1422,14 +1198,6 @@
   "lon": -71.24042930975291,
   "name": "Cartier-Brébeuf",
   "station_id": "92"
- },
- "93": {
-  "address": "Transfert 8",
-  "capacity": 16,
-  "lat": 46.817040875261036,
-  "lon": -71.25809817129857,
-  "name": "Du Chanoine-Côté / Beaucage",
-  "station_id": "93"
  },
  "94": {
   "address": "Test",
