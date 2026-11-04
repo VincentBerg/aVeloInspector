@@ -15,14 +15,6 @@
   "name": "Musée des plaines d'Abraham",
   "station_id": "100"
  },
- "101": {
-  "address": "Parc Roland-Beaudin",
-  "capacity": 20,
-  "lat": 46.77241980350945,
-  "lon": -71.30060636888116,
-  "name": "Parc Roland-Beaudin",
-  "station_id": "101"
- },
  "102": {
   "address": "1re Rue / 6e Avenue",
   "capacity": 20,
@@ -55,14 +47,6 @@
   "name": "Église de Saint-Pascal-de-Maizerets",
   "station_id": "105"
  },
- "106": {
-  "address": "Parc Dollards-Des Ormeaux",
-  "capacity": 16,
-  "lat": 46.80555621525353,
-  "lon": -71.2476885329298,
-  "name": "Parc Dollard-Des Ormeaux",
-  "station_id": "106"
- },
  "108": {
   "address": "Espace Quatre Cents",
   "capacity": 16,
@@ -70,14 +54,6 @@
   "lon": -71.20520173003877,
   "name": "Espace Quatre Cents",
   "station_id": "108"
- },
- "109": {
-  "address": "Parc du Général-Vanier",
-  "capacity": 16,
-  "lat": 46.80782585940283,
-  "lon": -71.2534048873447,
-  "name": "Parc du Général-Vanier",
-  "station_id": "109"
  },
  "11": {
   "address": "1051 Avenue Cartier",
@@ -111,14 +87,6 @@
   "name": "Parc Richelieu",
   "station_id": "112"
  },
- "113": {
-  "address": "Hochelaga / De Soulanges",
-  "capacity": 16,
-  "lat": 46.76970390410054,
-  "lon": -71.28928335832975,
-  "name": "Hochelaga / De Soulanges",
-  "station_id": "113"
- },
  "114": {
   "address": "Place Ste-Foy",
   "capacity": 22,
@@ -142,22 +110,6 @@
   "lon": -71.24584830886256,
   "name": "Des Saules E. / 1re Avenue",
   "station_id": "121"
- },
- "125": {
-  "address": "Transfert3",
-  "capacity": 16,
-  "lat": 46.766558927107255,
-  "lon": -71.28728643815093,
-  "name": "Sasseville / De l'Église",
-  "station_id": "125"
- },
- "126": {
-  "address": "Transfert4",
-  "capacity": 20,
-  "lat": 46.7600786305359,
-  "lon": -71.28852339760803,
-  "name": "De La Forest / Lavigerie",
-  "station_id": "126"
  },
  "13": {
   "address": "Cégep Garneau",
@@ -239,14 +191,6 @@
   "name": "Chevremont / Monseigneur-Laflèche",
   "station_id": "141"
  },
- "142": {
-  "address": "Du Sieur-D'Argenteuil / Saint-Louis",
-  "capacity": 16,
-  "lat": 46.761559974827165,
-  "lon": -71.28364205078734,
-  "name": "Du Sieur-D'Argenteuil / Saint-Louis",
-  "station_id": "142"
- },
  "143": {
   "address": "Chanoine-Martin / Sainte-Foy",
   "capacity": 16,
@@ -263,14 +207,6 @@
   "name": "Sainte-Foy / Arthur-Rousseau",
   "station_id": "144"
  },
- "145": {
-  "address": "Des Châtelets / Lavigerie",
-  "capacity": 20,
-  "lat": 46.76588682116709,
-  "lon": -71.29577158843003,
-  "name": "Des Châtelets / Lavigerie",
-  "station_id": "145"
- },
  "146": {
   "address": "Moncton / Fraser",
   "capacity": 20,
@@ -278,22 +214,6 @@
   "lon": -71.23255984945145,
   "name": "Moncton / Fraser",
   "station_id": "146"
- },
- "147": {
-  "address": "Quatre-Bourgeois / Wilfrid-Pelletier",
-  "capacity": 20,
-  "lat": 46.76898126882456,
-  "lon": -71.3060710144325,
-  "name": "Parc du Verdier",
-  "station_id": "147"
- },
- "149": {
-  "address": "De Bourgogne / Du Viaduc",
-  "capacity": 20,
-  "lat": 46.76711315592514,
-  "lon": -71.31225161311141,
-  "name": "De Bourgogne / Du Viaduc",
-  "station_id": "149"
  },
  "15": {
   "address": "De Callières / Marguerite-Bourgeoys",
@@ -303,14 +223,6 @@
   "name": "De Callières / Marguerite-Bourgeoys",
   "station_id": "15"
  },
- "150": {
-  "address": "France-Prime / Duchesneau",
-  "capacity": 16,
-  "lat": 46.76402211703366,
-  "lon": -71.30515904192997,
-  "name": "France-Prime / Duchesneau",
-  "station_id": "150"
- },
  "16": {
   "address": "YWCA Québec",
   "capacity": 16,
@@ -318,14 +230,6 @@
   "lon": -71.25432294892155,
   "name": "Marie-Rollet / Marguerite-Bourgeoys",
   "station_id": "16"
- },
- "161": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.80157536752623,
-  "lon": -71.26140713501556,
-  "name": "Borne / Saint-Sacrement",
-  "station_id": "161"
  },
  "162": {
   "address": "Wilfrid-Laurier / Galipeault",
@@ -375,14 +279,6 @@
   "name": "Gérard-Morisset / René-Lévesque O.",
   "station_id": "167"
  },
- "168": {
-  "address": "École de danse de Québec",
-  "capacity": 20,
-  "lat": 46.79772781962854,
-  "lon": -71.26241030357633,
-  "name": "Cyrille-Duquet / Charest O.",
-  "station_id": "168"
- },
  "169": {
   "address": "Parc Alys-Robi",
   "capacity": 16,
@@ -415,22 +311,6 @@
   "name": "Félix-Gabriel-Marchand / Saint-Olivier",
   "station_id": "171"
  },
- "178": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.753908045493056,
-  "lon": -71.32324788096389,
-  "name": "Centre communautaire de la Pointe-de-Ste-Foy",
-  "station_id": "178"
- },
- "179": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.75668063137592,
-  "lon": -71.31010924245422,
-  "name": "De Liège / Neilson",
-  "station_id": "179"
- },
  "18": {
   "address": "Patro Laval",
   "capacity": 20,
@@ -438,30 +318,6 @@
   "lon": -71.24216566311739,
   "name": "Patro Laval",
   "station_id": "18"
- },
- "180": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.75141059309815,
-  "lon": -71.34895685437164,
-  "name": "Parc de Chauray",
-  "station_id": "180"
- },
- "181": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.75806561514506,
-  "lon": -71.34979102137527,
-  "name": "Provancher / De la Chaudière",
-  "station_id": "181"
- },
- "187": {
-  "address": "",
-  "capacity": 12,
-  "lat": 46.74751044825724,
-  "lon": -71.34178068642223,
-  "name": "Parc nautique de Cap-Rouge",
-  "station_id": "187"
  },
  "188": {
   "address": "",
@@ -511,38 +367,6 @@
   "name": "De l'Alverne / Sainte-Foy",
   "station_id": "195"
  },
- "196": {
-  "address": "",
-  "capacity": 21,
-  "lat": 46.76263351849893,
-  "lon": -71.3194498729988,
-  "name": "De La Pérade / Bégon",
-  "station_id": "196"
- },
- "197": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.752972165786225,
-  "lon": -71.32885058884925,
-  "name": "Terminus de Marly",
-  "station_id": "197"
- },
- "198": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.76109102163539,
-  "lon": -71.33399817469558,
-  "name": "Laudance / Du Campanile",
-  "station_id": "198"
- },
- "199": {
-  "address": "Conrad-Laforte / Sainte-Foy",
-  "capacity": 20,
-  "lat": 46.76493294195758,
-  "lon": -71.33302453282317,
-  "name": "Conrad-Laforte / Sainte-Foy",
-  "station_id": "199"
- },
  "2": {
   "address": "780 3e Avenue",
   "capacity": 24,
@@ -558,22 +382,6 @@
   "lon": -71.2434363596382,
   "name": "Bibliothèque Collège-des-Jésuites",
   "station_id": "20"
- },
- "200": {
-  "address": "De Tilly / Maricourt",
-  "capacity": 16,
-  "lat": 46.76118936673766,
-  "lon": -71.3170874392016,
-  "name": "De Tilly / Maricourt",
-  "station_id": "200"
- },
- "201": {
-  "address": "Parc Raymond-De Rosa",
-  "capacity": 16,
-  "lat": 46.75803538996963,
-  "lon": -71.30705972997033,
-  "name": "Parc Raymond-De Rosa",
-  "station_id": "201"
  },
  "202": {
   "address": "",
@@ -614,30 +422,6 @@
   "lon": -71.23946720926467,
   "name": "Père-Marquette / Des Braves",
   "station_id": "21"
- },
- "212": {
-  "address": "De la Pente-Douce / Calixa-Lavallée",
-  "capacity": 16,
-  "lat": 46.801241439035415,
-  "lon": -71.24535526416412,
-  "name": "De la Pente-Douce / Calixa-Lavallée",
-  "station_id": "212"
- },
- "213": {
-  "address": "Kirouac / Marie-Louise",
-  "capacity": 20,
-  "lat": 46.80405961258324,
-  "lon": -71.24245532186848,
-  "name": "Kirouac / Marie-Louise",
-  "station_id": "213"
- },
- "214": {
-  "address": "Bouffard / Napoléon",
-  "capacity": 20,
-  "lat": 46.806722716203716,
-  "lon": -71.24260430641488,
-  "name": "Bouffard / Napoléon",
-  "station_id": "214"
  },
  "215": {
   "address": "Église de Saint-Sauveur",
@@ -1206,14 +990,6 @@
   "lon": -71.23200630489376,
   "name": "CFP de Limoilou",
   "station_id": "94"
- },
- "95": {
-  "address": "Bibliothèque Monique-Corriveau",
-  "capacity": 18,
-  "lat": 46.7702541223334,
-  "lon": -71.2935252718868,
-  "name": "Bibliothèque Monique-Corriveau",
-  "station_id": "95"
  },
  "96": {
   "address": "Des Peupliers / 4e Avenue",
