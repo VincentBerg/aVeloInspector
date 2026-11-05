@@ -111,14 +111,6 @@
   "name": "Des Saules E. / 1re Avenue",
   "station_id": "121"
  },
- "13": {
-  "address": "Cégep Garneau",
-  "capacity": 18,
-  "lat": 46.79273110396984,
-  "lon": -71.26363071131132,
-  "name": "Cégep Garneau",
-  "station_id": "13"
- },
  "130": {
   "address": "Des Aulnes / Des Frênes",
   "capacity": 16,
@@ -174,46 +166,6 @@
   "lon": -71.25832027273796,
   "name": "Eymard / Sainte-Foy",
   "station_id": "14"
- },
- "140": {
-  "address": "De Belmont / Sainte-Foy",
-  "capacity": 20,
-  "lat": 46.78852625368843,
-  "lon": -71.27235196379394,
-  "name": "De Belmont / Sainte-Foy",
-  "station_id": "140"
- },
- "141": {
-  "address": "Chèvremont / Monseigneur-Laflèche",
-  "capacity": 16,
-  "lat": 46.78400768545028,
-  "lon": -71.29113718755795,
-  "name": "Chevremont / Monseigneur-Laflèche",
-  "station_id": "141"
- },
- "143": {
-  "address": "Chanoine-Martin / Sainte-Foy",
-  "capacity": 16,
-  "lat": 46.779083886545955,
-  "lon": -71.30320529115448,
-  "name": "Du Chanoine-Martin / Sainte-Foy",
-  "station_id": "143"
- },
- "144": {
-  "address": "Sainte-Foy / Arthur-Rousseau",
-  "capacity": 20,
-  "lat": 46.78062709365555,
-  "lon": -71.29999487661286,
-  "name": "Sainte-Foy / Arthur-Rousseau",
-  "station_id": "144"
- },
- "146": {
-  "address": "Moncton / Fraser",
-  "capacity": 20,
-  "lat": 46.80010688490026,
-  "lon": -71.23255984945145,
-  "name": "Moncton / Fraser",
-  "station_id": "146"
  },
  "15": {
   "address": "De Callières / Marguerite-Bourgeoys",
@@ -319,14 +271,6 @@
   "name": "Patro Laval",
   "station_id": "18"
  },
- "188": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.78952696444473,
-  "lon": -71.2825537959872,
-  "name": "Parc Nérée-Tremblay",
-  "station_id": "188"
- },
  "189": {
   "address": "",
   "capacity": 16,
@@ -334,14 +278,6 @@
   "lon": -71.21340089210403,
   "name": "Richelieu / D'Auteuil",
   "station_id": "189"
- },
- "19": {
-  "address": "Parc du Bois-de-Coulonge",
-  "capacity": 17,
-  "lat": 46.78924450706438,
-  "lon": -71.2442994386663,
-  "name": "Parc du Bois-de-Coulonge",
-  "station_id": "19"
  },
  "190": {
   "address": "",
@@ -431,22 +367,6 @@
   "name": "Église de Saint-Sauveur",
   "station_id": "215"
  },
- "216": {
-  "address": "Lapointe / Du Général-Allard",
-  "capacity": 24,
-  "lat": 46.770324148771486,
-  "lon": -71.27962502551708,
-  "name": "Lapointe / Du Général-Allard",
-  "station_id": "216"
- },
- "217": {
-  "address": "Charles / De Bergerville",
-  "capacity": 20,
-  "lat": 46.78274159013718,
-  "lon": -71.247622223806,
-  "name": "Charles / De Bergerville",
-  "station_id": "217"
- },
  "22": {
   "address": "Murray / Sainte-Foy",
   "capacity": 16,
@@ -462,22 +382,6 @@
   "lon": -71.23230385112188,
   "name": "Père-Marquette / De Manrèse",
   "station_id": "23"
- },
- "233": {
-  "address": "Louis-Fréchette / De Callières",
-  "capacity": 16,
-  "lat": 46.7946977294111,
-  "lon": -71.24714963104748,
-  "name": "Louis-Fréchette / De Callières",
-  "station_id": "233"
- },
- "235": {
-  "address": "Brown / Grande Allée O.",
-  "capacity": 16,
-  "lat": 46.79784874186288,
-  "lon": -71.23182075918623,
-  "name": "Brown / Grande Allée O.",
-  "station_id": "235"
  },
  "24": {
   "address": "Parc Lockwell",
@@ -671,14 +575,6 @@
   "name": "Lavigueur / Sainte-Geneviève",
   "station_id": "48"
  },
- "49": {
-  "address": "Collège Mérici",
-  "capacity": 28,
-  "lat": 46.79652641037149,
-  "lon": -71.2328549657563,
-  "name": "Collège Mérici",
-  "station_id": "49"
- },
  "5": {
   "address": "18 Rue Pierre Olivier Chauveau",
   "capacity": 24,
@@ -703,38 +599,6 @@
   "name": "Raymond-Casgrain / Cardinal-Rouleau",
   "station_id": "51"
  },
- "52": {
-  "address": "La Cité Verte",
-  "capacity": 16,
-  "lat": 46.79775453955422,
-  "lon": -71.24919774460218,
-  "name": "La Cité Verte",
-  "station_id": "52"
- },
- "54": {
-  "address": "Sheppard / William",
-  "capacity": 20,
-  "lat": 46.784040811002114,
-  "lon": -71.24939086365126,
-  "name": "Sheppard / William",
-  "station_id": "54"
- },
- "55": {
-  "address": "Maguire / Sheppard",
-  "capacity": 15,
-  "lat": 46.78194791566562,
-  "lon": -71.25260951446913,
-  "name": "Maguire / Sheppard",
-  "station_id": "55"
- },
- "56": {
-  "address": "Parc Anet-Gomin",
-  "capacity": 16,
-  "lat": 46.7865771551821,
-  "lon": -71.25817778038405,
-  "name": "Parc Anet-Gomin",
-  "station_id": "56"
- },
  "57": {
   "address": "Hélène-Boullé / Du Bon-Air",
   "capacity": 20,
@@ -750,14 +614,6 @@
   "lon": -71.26640411543272,
   "name": "Parc Myrand",
   "station_id": "58"
- },
- "59": {
-  "address": "Myrand / Géronce-Gariépy",
-  "capacity": 20,
-  "lat": 46.785085850704306,
-  "lon": -71.26487257408522,
-  "name": "Myrand / Liénard",
-  "station_id": "59"
  },
  "6": {
   "address": "1113 Rue De L'Église",
@@ -791,14 +647,6 @@
   "name": "ULaval - PEPS",
   "station_id": "62"
  },
- "63": {
-  "address": "ULaval - Ferdinand-Vandry",
-  "capacity": 32,
-  "lat": 46.77901001088584,
-  "lon": -71.27655091213606,
-  "name": "ULaval - Adrien-Pouliot",
-  "station_id": "63"
- },
  "64": {
   "address": "Cégep de Sainte-Foy",
   "capacity": 24,
@@ -806,14 +654,6 @@
   "lon": -71.2852852318077,
   "name": "Cégep de Sainte-Foy",
   "station_id": "64"
- },
- "65": {
-  "address": "De Prével / Quatre-Bourgeois",
-  "capacity": 16,
-  "lat": 46.78449064943803,
-  "lon": -71.28475847172163,
-  "name": "De Prével / Quatre-Bourgeois",
-  "station_id": "65"
  },
  "66": {
   "address": "Pente-Douce / Montmagny",
@@ -903,38 +743,6 @@
   "name": "Domaine de Maizerets",
   "station_id": "79"
  },
- "80": {
-  "address": "Transfert",
-  "capacity": 16,
-  "lat": 46.778833676396516,
-  "lon": -71.25806780981443,
-  "name": "Parc du Buisson",
-  "station_id": "80"
- },
- "81": {
-  "address": "Transfert2",
-  "capacity": 23,
-  "lat": 46.780269132564186,
-  "lon": -71.28998810874842,
-  "name": "Samuel-King / Quatre-Bourgeois",
-  "station_id": "81"
- },
- "84": {
-  "address": "Transfert5",
-  "capacity": 16,
-  "lat": 46.77582368561753,
-  "lon": -71.29516242544393,
-  "name": "Wolfe / Quatre-Bourgeois",
-  "station_id": "84"
- },
- "85": {
-  "address": "Transfert6",
-  "capacity": 23,
-  "lat": 46.777906074001365,
-  "lon": -71.29445197510145,
-  "name": "IUCPQ",
-  "station_id": "85"
- },
  "88": {
   "address": "Transfert 9",
   "capacity": 16,
@@ -959,14 +767,6 @@
   "name": "Église Saint-Jean-Baptiste",
   "station_id": "9"
  },
- "90": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.78055383141489,
-  "lon": -71.27878653334997,
-  "name": "ULaval - Abitibi-Price",
-  "station_id": "90"
- },
  "92": {
   "address": "",
   "capacity": 20,
@@ -990,14 +790,6 @@
   "lon": -71.24064472905476,
   "name": "Des Peupliers E. / 4e Avenue",
   "station_id": "96"
- },
- "98": {
-  "address": "Laurier / Robert-Bourassa",
-  "capacity": 20,
-  "lat": 46.77235789261812,
-  "lon": -71.27423019171363,
-  "name": "Alexander / Du Colonel-Mathieu",
-  "station_id": "98"
  },
  "99": {
   "address": "Chapdelaine / De Belmont",
