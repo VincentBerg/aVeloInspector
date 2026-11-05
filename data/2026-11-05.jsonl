@@ -2017,3 +2017,5 @@
 {"ts": 1793874551, "station_id": "164", "bikes": 22, "docks": 2, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
 {"ts": 1793874626, "station_id": "10", "bikes": 10, "docks": 22, "status": "IN_SERVICE", "ebikes": 10, "mechanical": 0}
 {"ts": 1793874702, "station_id": "77", "bikes": 12, "docks": 12, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1793875080, "station_id": "77", "bikes": 11, "docks": 12, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
+{"ts": 1793875155, "station_id": "77", "bikes": 12, "docks": 12, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
