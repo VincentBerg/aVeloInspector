@@ -7,22 +7,6 @@
   "name": "Parc de la Francophonie",
   "station_id": "10"
  },
- "100": {
-  "address": "Musée des Plaines d'Abraham",
-  "capacity": 17,
-  "lat": 46.807458250139774,
-  "lon": -71.21246202104737,
-  "name": "Musée des plaines d'Abraham",
-  "station_id": "100"
- },
- "102": {
-  "address": "1re Rue / 6e Avenue",
-  "capacity": 20,
-  "lat": 46.82214759734603,
-  "lon": -71.22080572536477,
-  "name": "1re Rue / 6e Avenue",
-  "station_id": "102"
- },
  "103": {
   "address": "Benoît-XV / 16e Rue",
   "capacity": 20,
@@ -46,14 +30,6 @@
   "lon": -71.22207256483458,
   "name": "Église de Saint-Pascal-de-Maizerets",
   "station_id": "105"
- },
- "108": {
-  "address": "Espace Quatre Cents",
-  "capacity": 16,
-  "lat": 46.81716053424597,
-  "lon": -71.20520173003877,
-  "name": "Espace Quatre Cents",
-  "station_id": "108"
  },
  "11": {
   "address": "1051 Avenue Cartier",
@@ -79,14 +55,6 @@
   "name": "Sainte-Foy / Nérée-Tremblay",
   "station_id": "111"
  },
- "112": {
-  "address": "Parc Richelieu",
-  "capacity": 20,
-  "lat": 46.810794090010134,
-  "lon": -71.22086728091747,
-  "name": "Parc Richelieu",
-  "station_id": "112"
- },
  "114": {
   "address": "Place Ste-Foy",
   "capacity": 22,
@@ -111,14 +79,6 @@
   "name": "Des Saules E. / 1re Avenue",
   "station_id": "121"
  },
- "130": {
-  "address": "Des Aulnes / Des Frênes",
-  "capacity": 16,
-  "lat": 46.81262180931363,
-  "lon": -71.20731424422382,
-  "name": "Cathédrale Holy Trinity",
-  "station_id": "130"
- },
  "133": {
   "address": "Fleur-de-Lys / Wilfrid-hamel",
   "capacity": 54,
@@ -142,14 +102,6 @@
   "lon": -71.22893372249152,
   "name": "Église Saint-Fidèle",
   "station_id": "137"
- },
- "138": {
-  "address": "6e Rue / 1re Avenue",
-  "capacity": 20,
-  "lat": 46.82273936220322,
-  "lon": -71.23016165586755,
-  "name": "6e Rue / 1re Avenue",
-  "station_id": "138"
  },
  "139": {
   "address": "4e Rue / 4e Avenue",
@@ -183,22 +135,6 @@
   "name": "Marie-Rollet / Marguerite-Bourgeoys",
   "station_id": "16"
  },
- "162": {
-  "address": "Wilfrid-Laurier / Galipeault",
-  "capacity": 16,
-  "lat": 46.802699971603225,
-  "lon": -71.22095197043895,
-  "name": "Wilfrid-Laurier / Galipeault",
-  "station_id": "162"
- },
- "163": {
-  "address": "Kirouac / Durocher",
-  "capacity": 16,
-  "lat": 46.8085097626665,
-  "lon": -71.23451352154596,
-  "name": "Kirouac / Durocher",
-  "station_id": "163"
- },
  "164": {
   "address": "Père-Marquette / Calixa-Lavallée",
   "capacity": 24,
@@ -207,22 +143,6 @@
   "name": "Père-Marquette / Calixa-Lavallée",
   "station_id": "164"
  },
- "165": {
-  "address": "Saint-Sauveur / Bonaventure",
-  "capacity": 16,
-  "lat": 46.80989848531457,
-  "lon": -71.24325770261726,
-  "name": "Saint-Sauveur / Saint-Bonaventure",
-  "station_id": "165"
- },
- "166": {
-  "address": "Du Parvis / De Sainte-Hélène",
-  "capacity": 15,
-  "lat": 46.813765376006444,
-  "lon": -71.22296582832388,
-  "name": "Du Parvis / De Sainte-Hélène",
-  "station_id": "166"
- },
  "167": {
   "address": "Gérard-Morisset / René-Lévesque",
   "capacity": 19,
@@ -230,14 +150,6 @@
   "lon": -71.25653867825925,
   "name": "Gérard-Morisset / René-Lévesque O.",
   "station_id": "167"
- },
- "169": {
-  "address": "Parc Alys-Robi",
-  "capacity": 16,
-  "lat": 46.81032491977499,
-  "lon": -71.23527292425628,
-  "name": "Parc Alys-Robi",
-  "station_id": "169"
  },
  "17": {
   "address": "Ernest-Gagnon / De Callières",
@@ -255,14 +167,6 @@
   "name": "SAAQ - Édifice Jean-Lesage",
   "station_id": "170"
  },
- "171": {
-  "address": "Félix-Gabriel-Marchand / Siant-Olivier",
-  "capacity": 16,
-  "lat": 46.807903695419064,
-  "lon": -71.22731709797834,
-  "name": "Félix-Gabriel-Marchand / Saint-Olivier",
-  "station_id": "171"
- },
  "18": {
   "address": "Patro Laval",
   "capacity": 20,
@@ -270,38 +174,6 @@
   "lon": -71.24216566311739,
   "name": "Patro Laval",
   "station_id": "18"
- },
- "189": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.81399310540252,
-  "lon": -71.21340089210403,
-  "name": "Richelieu / D'Auteuil",
-  "station_id": "189"
- },
- "190": {
-  "address": "",
-  "capacity": 16,
-  "lat": 46.81711162285961,
-  "lon": -71.20236072066268,
-  "name": "Dalhousie / Quai Saint-André",
-  "station_id": "190"
- },
- "194": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.80371620622681,
-  "lon": -71.22905138256988,
-  "name": "De Bourlamaque / Crémazie O.",
-  "station_id": "194"
- },
- "195": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.804255979168616,
-  "lon": -71.23222309472997,
-  "name": "De l'Alverne / Sainte-Foy",
-  "station_id": "195"
  },
  "2": {
   "address": "780 3e Avenue",
@@ -327,30 +199,6 @@
   "name": "Place Ste-Foy - Robert-Bourassa",
   "station_id": "202"
  },
- "206": {
-  "address": "Saint-Jean / Des Zouaves",
-  "capacity": 20,
-  "lat": 46.8101613511717,
-  "lon": -71.21969287176842,
-  "name": "Saint-Jean / Des Zouaves",
-  "station_id": "206"
- },
- "207": {
-  "address": "Parc Victoria - Saint-Anselme",
-  "capacity": 24,
-  "lat": 46.815345180084435,
-  "lon": -71.23185756629042,
-  "name": "Parc Victoria - Saint-Anselme",
-  "station_id": "207"
- },
- "208": {
-  "address": "Pont Dorchester",
-  "capacity": 20,
-  "lat": 46.81894575680881,
-  "lon": -71.22346526143316,
-  "name": "Pont Dorchester",
-  "station_id": "208"
- },
  "21": {
   "address": "Père-Marquette / Belvédère",
   "capacity": 16,
@@ -358,14 +206,6 @@
   "lon": -71.23946720926467,
   "name": "Père-Marquette / Des Braves",
   "station_id": "21"
- },
- "215": {
-  "address": "Église de Saint-Sauveur",
-  "capacity": 24,
-  "lat": 46.81120250657907,
-  "lon": -71.23595648548323,
-  "name": "Église de Saint-Sauveur",
-  "station_id": "215"
  },
  "22": {
   "address": "Murray / Sainte-Foy",
@@ -407,22 +247,6 @@
   "name": "Grand Théâtre de Québec",
   "station_id": "26"
  },
- "27": {
-  "address": "Parc de l'Esplanade",
-  "capacity": 32,
-  "lat": 46.81083682977029,
-  "lon": -71.21174416734335,
-  "name": "Parc de l'Esplanade",
-  "station_id": "27"
- },
- "28": {
-  "address": "Parc Montmorency",
-  "capacity": 24,
-  "lat": 46.813879991851834,
-  "lon": -71.20484575502414,
-  "name": "Parc Montmorency",
-  "station_id": "28"
- },
  "29": {
   "address": "Place des Canotiers",
   "capacity": 32,
@@ -463,14 +287,6 @@
   "name": "Parc John-Munn",
   "station_id": "32"
  },
- "33": {
-  "address": "La Fabrique",
-  "capacity": 24,
-  "lat": 46.81151350118088,
-  "lon": -71.22720860680359,
-  "name": "Saint-Vallier E. / Caron",
-  "station_id": "33"
- },
  "34": {
   "address": "Saint-Joseph / Langelier",
   "capacity": 20,
@@ -495,14 +311,6 @@
   "name": "Parc Victoria - S.-Napoléon-Parent",
   "station_id": "36"
  },
- "37": {
-  "address": "Parc de la Pointe-aux-Lièvres",
-  "capacity": 20,
-  "lat": 46.82117479531745,
-  "lon": -71.23453194398171,
-  "name": "Parc de la Pointe-aux-Lièvres",
-  "station_id": "37"
- },
  "38": {
   "address": "3e Rue / 3e Avenue",
   "capacity": 24,
@@ -518,14 +326,6 @@
   "lon": -71.23470697516585,
   "name": "13e Rue / 1re Avenue",
   "station_id": "39"
- },
- "4": {
-  "address": "37 Rue Dalhousie",
-  "capacity": 15,
-  "lat": 46.812146312979735,
-  "lon": -71.20227632353003,
-  "name": "Traverse",
-  "station_id": "4"
  },
  "40": {
   "address": "Cégep Limoilou",
@@ -550,22 +350,6 @@
   "lon": -71.24406570853023,
   "name": "ExpoCité - Grand Marché",
   "station_id": "42"
- },
- "44": {
-  "address": "Transfert",
-  "capacity": 24,
-  "lat": 46.813485161116674,
-  "lon": -71.21933000611685,
-  "name": "Saint-Vallier E. / Lépine",
-  "station_id": "44"
- },
- "45": {
-  "address": "Des Gouverneurs",
-  "capacity": 15,
-  "lat": 46.8113080501692,
-  "lon": -71.20505394863508,
-  "name": "Château Frontenac",
-  "station_id": "45"
  },
  "48": {
   "address": "Lavigueur",
@@ -671,14 +455,6 @@
   "name": "Raoul-Jobin / Marie-de-l'Incarnation",
   "station_id": "67"
  },
- "68": {
-  "address": "Saint-Germain / Boisseau",
-  "capacity": 24,
-  "lat": 46.80986516079751,
-  "lon": -71.23799549865149,
-  "name": "Bayard / Boisseau",
-  "station_id": "68"
- },
  "69": {
   "address": "Signaï / Christophe-Colomb",
   "capacity": 28,
@@ -686,14 +462,6 @@
   "lon": -71.23170705961607,
   "name": "Signaï / Christophe-Colomb",
   "station_id": "69"
- },
- "7": {
-  "address": "270 Rue de Carillon",
-  "capacity": 12,
-  "lat": 46.812007911002574,
-  "lon": -71.23967590259932,
-  "name": "Parc Durocher",
-  "station_id": "7"
  },
  "70": {
   "address": "Bourdages / Monseigneur-Plessis",
@@ -766,14 +534,6 @@
   "lon": -71.22241758851497,
   "name": "Église Saint-Jean-Baptiste",
   "station_id": "9"
- },
- "92": {
-  "address": "",
-  "capacity": 20,
-  "lat": 46.82423367281973,
-  "lon": -71.24042930975291,
-  "name": "Cartier-Brébeuf",
-  "station_id": "92"
  },
  "94": {
   "address": "Test",
