@@ -521,7 +521,7 @@
  },
  "4": {
   "address": "37 Rue Dalhousie",
-  "capacity": 16,
+  "capacity": 15,
   "lat": 46.812146312979735,
   "lon": -71.20227632353003,
   "name": "Traverse",
@@ -617,7 +617,7 @@
  },
  "6": {
   "address": "1113 Rue De L'Église",
-  "capacity": 33,
+  "capacity": 34,
   "lat": 46.81433964390105,
   "lon": -71.22489827203177,
   "name": "Place Jacques-Cartier",
