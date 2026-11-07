@@ -28,9 +28,9 @@
   "status": "IN_SERVICE"
  },
  "11": {
-  "bikes": 9,
-  "docks": 18,
-  "ebikes": 9,
+  "bikes": 7,
+  "docks": 20,
+  "ebikes": 7,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -266,9 +266,9 @@
   "status": "IN_SERVICE"
  },
  "36": {
-  "bikes": 16,
-  "docks": 8,
-  "ebikes": 16,
+  "bikes": 13,
+  "docks": 11,
+  "ebikes": 13,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -315,9 +315,9 @@
   "status": "IN_SERVICE"
  },
  "5": {
-  "bikes": 0,
-  "docks": 23,
-  "ebikes": 0,
+  "bikes": 1,
+  "docks": 22,
+  "ebikes": 1,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
