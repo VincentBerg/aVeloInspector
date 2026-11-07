@@ -2772,3 +2772,17 @@
 {"ts": 1794061268, "station_id": "31", "bikes": 6, "docks": 14, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
 {"ts": 1794061268, "station_id": "42", "bikes": 15, "docks": 1, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
 {"ts": 1794061268, "station_id": "67", "bikes": 12, "docks": 8, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1794061344, "station_id": "25", "bikes": 8, "docks": 10, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1794061344, "station_id": "50", "bikes": 15, "docks": 13, "status": "IN_SERVICE", "ebikes": 15, "mechanical": 0}
+{"ts": 1794061419, "station_id": "9", "bikes": 6, "docks": 22, "status": "IN_SERVICE", "ebikes": 6, "mechanical": 0}
+{"ts": 1794061419, "station_id": "20", "bikes": 4, "docks": 12, "status": "IN_SERVICE", "ebikes": 4, "mechanical": 0}
+{"ts": 1794061419, "station_id": "29", "bikes": 7, "docks": 25, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1794061419, "station_id": "34", "bikes": 2, "docks": 18, "status": "IN_SERVICE", "ebikes": 2, "mechanical": 0}
+{"ts": 1794061419, "station_id": "67", "bikes": 11, "docks": 9, "status": "IN_SERVICE", "ebikes": 11, "mechanical": 0}
+{"ts": 1794061494, "station_id": "20", "bikes": 8, "docks": 8, "status": "IN_SERVICE", "ebikes": 8, "mechanical": 0}
+{"ts": 1794061494, "station_id": "23", "bikes": 12, "docks": 12, "status": "IN_SERVICE", "ebikes": 12, "mechanical": 0}
+{"ts": 1794061494, "station_id": "24", "bikes": 7, "docks": 17, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1794061494, "station_id": "31", "bikes": 7, "docks": 13, "status": "IN_SERVICE", "ebikes": 7, "mechanical": 0}
+{"ts": 1794061494, "station_id": "69", "bikes": 22, "docks": 6, "status": "IN_SERVICE", "ebikes": 22, "mechanical": 0}
+{"ts": 1794061494, "station_id": "96", "bikes": 13, "docks": 3, "status": "IN_SERVICE", "ebikes": 13, "mechanical": 0}
+{"ts": 1794061570, "station_id": "164", "bikes": 9, "docks": 15, "status": "IN_SERVICE", "ebikes": 9, "mechanical": 0}
