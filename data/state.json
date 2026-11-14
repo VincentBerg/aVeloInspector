@@ -28,9 +28,9 @@
   "status": "IN_SERVICE"
  },
  "11": {
-  "bikes": 11,
-  "docks": 17,
-  "ebikes": 11,
+  "bikes": 10,
+  "docks": 18,
+  "ebikes": 10,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -77,9 +77,9 @@
   "status": "IN_SERVICE"
  },
  "136": {
-  "bikes": 10,
-  "docks": 10,
-  "ebikes": 10,
+  "bikes": 9,
+  "docks": 11,
+  "ebikes": 9,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -189,16 +189,16 @@
   "status": "IN_SERVICE"
  },
  "23": {
-  "bikes": 9,
-  "docks": 15,
-  "ebikes": 9,
+  "bikes": 8,
+  "docks": 16,
+  "ebikes": 8,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "24": {
-  "bikes": 11,
-  "docks": 13,
-  "ebikes": 11,
+  "bikes": 10,
+  "docks": 14,
+  "ebikes": 10,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -210,16 +210,16 @@
   "status": "IN_SERVICE"
  },
  "26": {
-  "bikes": 16,
+  "bikes": 15,
   "docks": 18,
-  "ebikes": 16,
+  "ebikes": 15,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "29": {
-  "bikes": 8,
-  "docks": 24,
-  "ebikes": 8,
+  "bikes": 9,
+  "docks": 23,
+  "ebikes": 9,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -252,16 +252,16 @@
   "status": "IN_SERVICE"
  },
  "34": {
-  "bikes": 9,
-  "docks": 11,
-  "ebikes": 9,
+  "bikes": 10,
+  "docks": 10,
+  "ebikes": 10,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "35": {
-  "bikes": 12,
-  "docks": 8,
-  "ebikes": 12,
+  "bikes": 13,
+  "docks": 7,
+  "ebikes": 13,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -315,16 +315,16 @@
   "status": "IN_SERVICE"
  },
  "5": {
-  "bikes": 11,
-  "docks": 12,
-  "ebikes": 11,
+  "bikes": 12,
+  "docks": 11,
+  "ebikes": 12,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
  "50": {
-  "bikes": 9,
-  "docks": 19,
-  "ebikes": 9,
+  "bikes": 8,
+  "docks": 20,
+  "ebikes": 8,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
@@ -462,9 +462,9 @@
   "status": "IN_SERVICE"
  },
  "9": {
-  "bikes": 10,
-  "docks": 18,
-  "ebikes": 10,
+  "bikes": 11,
+  "docks": 17,
+  "ebikes": 11,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
