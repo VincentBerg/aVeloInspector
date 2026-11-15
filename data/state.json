@@ -1,8 +1,8 @@
 {
  "10": {
-  "bikes": 11,
-  "docks": 21,
-  "ebikes": 11,
+  "bikes": 10,
+  "docks": 22,
+  "ebikes": 10,
   "mechanical": 0,
   "status": "IN_SERVICE"
  },
