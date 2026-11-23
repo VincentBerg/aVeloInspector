@@ -1,1 +1,9 @@
-{}
+{
+ "133": {
+  "bikes": 0,
+  "docks": 54,
+  "ebikes": 0,
+  "mechanical": 0,
+  "status": "IN_SERVICE"
+ }
+}
